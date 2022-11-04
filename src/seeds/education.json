@@ -3,14 +3,14 @@
     "school": "Brock University",
     "degree": "Bachelor of Sport Management",
     "year": "2010 - 2014",
-    "description": "",
-    "imageURL": ""
+    "description": "Brock University is the only university in Canada offering a specialized Bachelor of Sport Management Degree. The program is designed to meet the needs of rapidly expanding sport industry. Students are taught multiple displinces that includes marketing, public relations, event management and more",
+    "imageURL": "https://seeklogo.com/images/B/brock-university-logo-4AA9CA3B98-seeklogo.com.png"
   },
   {
     "school": "Lighthouse Labs",
     "degree": "Diploma of Web Development",
     "year": "2022",
     "description": "A 12 week bootcamp designed to transform students into professional web developers. Teaching coding logic using popular languages and frameworks such as JavaScript & Ruby on Rails, while learning how to think like a programmer by building software from the ground up",
-    "imageURL": ""
+    "imageURL": "https://www.lighthouselabs.ca/assets/lighthouselabs-logo-d5df6d383f7466b06a64de9561fd537493502eafe78bbf3bcd3de82884e5dd85.png"
   }
 ]
