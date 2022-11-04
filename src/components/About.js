@@ -7,6 +7,7 @@ import WorkIcon from '@mui/icons-material/Work';
 import BoyIcon from '@mui/icons-material/Boy';
 import Box from '@mui/material/Box';
 import pwc from '../images/PWC.jpg'
+import Education from './Education';
 
 export default function AboutMe() {
   return (
@@ -25,7 +26,7 @@ export default function AboutMe() {
         src={pwc}
         id="About-img"
       />
-        <div className="Card-list">
+        {/* <div className="Card-list">
           <Card sx={{ maxWidth: 345 }}>
             <CardContent>
               <SchoolIcon />
@@ -60,7 +61,8 @@ export default function AboutMe() {
               </ul>
             </CardContent>
           </Card>
-        </div>
+        </div> */}
+        <Education />
         <Card sx={{ maxWidth: 465 }} id="about-description">
             <CardContent >
               <BoyIcon fontSize="large"/>
