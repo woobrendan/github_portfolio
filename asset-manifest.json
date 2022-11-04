@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/github_portfolio/github_portfolio/static/css/main.f9f392db.css",
-    "main.js": "/github_portfolio/github_portfolio/static/js/main.a578074d.js",
-    "static/js/787.2f41dc65.chunk.js": "/github_portfolio/github_portfolio/static/js/787.2f41dc65.chunk.js",
-    "static/media/Jungle_Order.gif": "/github_portfolio/github_portfolio/static/media/Jungle_Order.b5185523aaed8b914d20.gif",
-    "static/media/gradient-black.jpg": "/github_portfolio/github_portfolio/static/media/gradient-black.be68e63b57b3f25df6d3.jpg",
-    "static/media/TBJ.jpeg": "/github_portfolio/github_portfolio/static/media/TBJ.8da3b9ba191b0d064fa2.jpeg",
-    "static/media/IRB.jpeg": "/github_portfolio/github_portfolio/static/media/IRB.a59efb1fbc120d3705b8.jpeg",
-    "static/media/sro.jpeg": "/github_portfolio/github_portfolio/static/media/sro.49bdb49d1afe5caaff96.jpeg",
-    "static/media/Laguna-Autograph.jpg": "/github_portfolio/github_portfolio/static/media/Laguna-Autograph.66b1848120b2c28e43c3.jpg",
-    "static/media/Add_appointment.gif": "/github_portfolio/github_portfolio/static/media/Add_appointment.e377f41be1ae66bbb5a7.gif",
-    "static/media/PWC.jpg": "/github_portfolio/github_portfolio/static/media/PWC.d7c860c1ce75a436879f.jpg",
-    "index.html": "/github_portfolio/github_portfolio/index.html",
-    "static/media/circle-check-solid.svg": "/github_portfolio/github_portfolio/static/media/circle-check-solid.f16c3ae53cd894a1e5a1.svg",
-    "main.f9f392db.css.map": "/github_portfolio/github_portfolio/static/css/main.f9f392db.css.map",
-    "main.a578074d.js.map": "/github_portfolio/github_portfolio/static/js/main.a578074d.js.map",
-    "787.2f41dc65.chunk.js.map": "/github_portfolio/github_portfolio/static/js/787.2f41dc65.chunk.js.map"
+    "main.css": "/github_portfolio/static/css/main.b63ae47c.css",
+    "main.js": "/github_portfolio/static/js/main.462e5c42.js",
+    "static/js/787.2f41dc65.chunk.js": "/github_portfolio/static/js/787.2f41dc65.chunk.js",
+    "static/media/Jungle_Order.gif": "/github_portfolio/static/media/Jungle_Order.b5185523aaed8b914d20.gif",
+    "static/media/gradient-black.jpg": "/github_portfolio/static/media/gradient-black.be68e63b57b3f25df6d3.jpg",
+    "static/media/TBJ.jpeg": "/github_portfolio/static/media/TBJ.8da3b9ba191b0d064fa2.jpeg",
+    "static/media/IRB.jpeg": "/github_portfolio/static/media/IRB.a59efb1fbc120d3705b8.jpeg",
+    "static/media/sro.jpeg": "/github_portfolio/static/media/sro.49bdb49d1afe5caaff96.jpeg",
+    "static/media/Laguna-Autograph.jpg": "/github_portfolio/static/media/Laguna-Autograph.66b1848120b2c28e43c3.jpg",
+    "static/media/Add_appointment.gif": "/github_portfolio/static/media/Add_appointment.e377f41be1ae66bbb5a7.gif",
+    "static/media/PWC.jpg": "/github_portfolio/static/media/PWC.d7c860c1ce75a436879f.jpg",
+    "index.html": "/github_portfolio/index.html",
+    "static/media/circle-check-solid.svg": "/github_portfolio/static/media/circle-check-solid.f16c3ae53cd894a1e5a1.svg",
+    "main.b63ae47c.css.map": "/github_portfolio/static/css/main.b63ae47c.css.map",
+    "main.462e5c42.js.map": "/github_portfolio/static/js/main.462e5c42.js.map",
+    "787.2f41dc65.chunk.js.map": "/github_portfolio/static/js/787.2f41dc65.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f9f392db.css",
-    "static/js/main.a578074d.js"
+    "static/css/main.b63ae47c.css",
+    "static/js/main.462e5c42.js"
   ]
 }
