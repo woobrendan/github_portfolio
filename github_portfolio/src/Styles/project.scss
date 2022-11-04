@@ -1,0 +1,49 @@
+#project-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+
+  .project-container {
+    // width: 80%;
+
+    .MuiCard-root {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .MuiButton-root {
+        border: 1px solid gold;
+        color: gold;
+      }
+
+      .MuiTypography-h5 {
+        background: gold;
+        color: black;
+      }
+
+      .MuiButton-root {
+        &:hover {
+          color: black;
+          border-color: white;
+          background-color: gold !important;
+        }
+      }
+    }
+
+    .MuiPaper-root {
+      background-color: rgba(63, 59, 59, 0.283) !important;
+      color: white !important;
+      border: 1px solid gold;
+      border-radius: 25px;
+      width: 70%;
+      margin: 15px;
+      margin-left: 15%;
+
+      p {
+        text-align: left;
+        padding-left: 15px;
+      }
+    }
+  }
+}
