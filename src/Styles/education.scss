@@ -1,0 +1,22 @@
+.Card-list {
+  // img {
+  //   object-fit: contain;
+  // }
+  .education_card {
+
+    border-radius: 25px;
+      margin: 30px;
+      border: 1px solid gold;
+
+      img {
+        object-fit: contain;
+        height: 100px;
+        width: 100px;
+      }
+    .education_img_container {
+      height: 100px;
+      width: 100px;
+
+    }
+  }
+}
