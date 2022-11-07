@@ -6,9 +6,9 @@ import EducationCard from './EducationCard';
 import '../../Styles/education.scss'
 
 function Education() {
-  console.log('education', education)
+  
   const mappedEducation = education.map((school) => (
-    <EducationCard schoolDetails={school}/>
+    <EducationCard schoolDetails={school} key={school.schoolName}/>
   ))
   return (
     <div className="Card-list">
