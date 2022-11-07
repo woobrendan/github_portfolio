@@ -7,7 +7,7 @@ import WorkIcon from '@mui/icons-material/Work';
 import BoyIcon from '@mui/icons-material/Boy';
 import Box from '@mui/material/Box';
 import pwc from '../images/PWC.jpg'
-import Education from './Education';
+import Education from './Education/Education';
 
 export default function AboutMe() {
   return (
