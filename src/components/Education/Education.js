@@ -2,9 +2,13 @@ import { Card, CardContent, Typography } from '@mui/material';
 import SchoolIcon from '@mui/icons-material/School';
 import WorkIcon from '@mui/icons-material/Work';
 import education from '../../seeds/education.json'
+import EducationCard from './EducationCard';
 
 function Education() {
   console.log('education', education)
+  const mappedEducation = education.map((school) => (
+    <EducationCard schoolDetails={school}/>
+  ))
   return (
     <div className="Card-list">
       <Card sx={{ maxWidth: 345 }}>
@@ -26,6 +30,7 @@ function Education() {
           </ul>
         </CardContent>
       </Card>
+      {mappedEducation}
       {/* <Card sx={{ maxWidth: 345 }}>
         <CardContent>
           <WorkIcon />
