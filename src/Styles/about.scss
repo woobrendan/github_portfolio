@@ -22,9 +22,10 @@
 
     .Card-list {
       display: flex;
-      justify-content: space-around;
-      width: 80%;
+      justify-content: center;
       flex-direction: column;
+      margin-left: 5%;
+      margin-right: 5%;
 
       .MuiPaper-root {
         background-color: rgba(63, 59, 59, 0.283) !important;
