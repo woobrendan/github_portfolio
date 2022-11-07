@@ -24,6 +24,7 @@
       display: flex;
       justify-content: space-around;
       width: 80%;
+      flex-direction: column;
 
       .MuiPaper-root {
         background-color: rgba(63, 59, 59, 0.283) !important;
