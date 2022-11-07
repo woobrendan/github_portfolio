@@ -5,18 +5,22 @@
   .education_card {
 
     border-radius: 25px;
-      margin: 30px;
-      border: 1px solid gold;
+    margin: 30px;
+    border: 1px solid gold;
+    position: relative;
+    max-width: 1000px;
 
       img {
         object-fit: contain;
-        height: 100px;
-        width: 100px;
+        height: auto;
+        width: 100%;
+        max-width: 100%;
       }
     .education_img_container {
-      height: 100px;
-      width: 100px;
-
+      height: 5em;
+      width: 7em;
+      position: absolute;
+      left: 50px;
     }
   }
 }
