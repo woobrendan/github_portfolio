@@ -1,4 +1,4 @@
-import './App.css';
+import './Styles/App.scss';
 import AboutMe from './components/About';
 import Experience from './components/experience';
 import Sidebar from './components/Sidebar';
