@@ -1,9 +1,16 @@
-import { Card, CardContent, CardMedia } from "@mui/material";
+import { Card, CardContent, CardMedia, Button } from "@mui/material";
+import { useState } from "react";
+import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
+import RemoveCircleOutlineIcon from '@mui/icons-material/RemoveCircleOutline';
 
 function EducationCard(props) {
+  
+  const [showDescription, setShowDescription] = useState(false);
   const school = props.schoolDetails;
+
+  const handleToggle = () => setShowDescription(!showDescription)
   return (
-    <Card sx={{ maxWidth: 700 }} >
+    <Card sx={{ maxWidth: 700 }} className="education_card">
       <CardMedia
           component="img"
           image={school.imageURL}
@@ -17,9 +24,25 @@ function EducationCard(props) {
               <h3>{school.year}</h3>
             </div>
           </div>
-          <div className="education_description">
-            <p>{school.description}</p>
-          </div>   
+          {showDescription && 
+            <div className="education_description">
+              <p>{school.description}</p>
+            </div>}
+          <div className="description_toggle">
+            <h4>Description</h4>
+            <Button onClick={()=> handleToggle()}>
+              {!showDescription && 
+                  <AddCircleOutlineIcon 
+                    // color="error"
+                    fontSize="large"
+                  />}
+                {showDescription && 
+                  <RemoveCircleOutlineIcon 
+                    // color="error"
+                    fontSize="large"
+                  />}
+            </Button>  
+          </div> 
       </CardContent>
     </Card>
   )
