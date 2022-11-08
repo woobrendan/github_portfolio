@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/github_portfolio/static/css/main.7819c40b.css",
-    "main.js": "/github_portfolio/static/js/main.8739be2a.js",
+    "main.css": "/github_portfolio/static/css/main.81a748a0.css",
+    "main.js": "/github_portfolio/static/js/main.e22f42d2.js",
     "static/js/787.2f41dc65.chunk.js": "/github_portfolio/static/js/787.2f41dc65.chunk.js",
     "static/media/Jungle_Order.gif": "/github_portfolio/static/media/Jungle_Order.b5185523aaed8b914d20.gif",
     "static/media/gradient-black.jpg": "/github_portfolio/static/media/gradient-black.be68e63b57b3f25df6d3.jpg",
@@ -13,12 +13,12 @@
     "static/media/PWC.jpg": "/github_portfolio/static/media/PWC.d7c860c1ce75a436879f.jpg",
     "index.html": "/github_portfolio/index.html",
     "static/media/circle-check-solid.svg": "/github_portfolio/static/media/circle-check-solid.f16c3ae53cd894a1e5a1.svg",
-    "main.7819c40b.css.map": "/github_portfolio/static/css/main.7819c40b.css.map",
-    "main.8739be2a.js.map": "/github_portfolio/static/js/main.8739be2a.js.map",
+    "main.81a748a0.css.map": "/github_portfolio/static/css/main.81a748a0.css.map",
+    "main.e22f42d2.js.map": "/github_portfolio/static/js/main.e22f42d2.js.map",
     "787.2f41dc65.chunk.js.map": "/github_portfolio/static/js/787.2f41dc65.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7819c40b.css",
-    "static/js/main.8739be2a.js"
+    "static/css/main.81a748a0.css",
+    "static/js/main.e22f42d2.js"
   ]
 }
