@@ -12,25 +12,6 @@ function Education() {
   ))
   return (
     <div className="Card-list">
-      <Card sx={{ maxWidth: 345 }}>
-        <CardContent>
-          <SchoolIcon />
-          <Typography gutterBottom variant="h4" component="div">
-            Education
-          </Typography>
-          <ul>
-            <li className="school">Lighthouse Labs</li>
-              <ul>
-                <li>Full Stack Web Development</li>
-              </ul>
-              <br></br>
-            <li className="school">Brock University</li>
-              <ul>
-                <li>Sport Management</li>
-              </ul>
-          </ul>
-        </CardContent>
-      </Card>
       {mappedEducation}
       {/* <Card sx={{ maxWidth: 345 }}>
         <CardContent>
