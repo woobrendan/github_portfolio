@@ -1,9 +1,6 @@
-import { Card, CardContent, Typography } from '@mui/material';
-import SchoolIcon from '@mui/icons-material/School';
 import WorkIcon from '@mui/icons-material/Work';
 import education from '../../seeds/education.json'
 import EducationCard from './EducationCard';
-import '../../Styles/education.scss'
 
 function Education() {
   
