@@ -2,8 +2,6 @@ import Typography from '@mui/material/Typography';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import '../Styles/about.scss'
-import SchoolIcon from '@mui/icons-material/School';
-import WorkIcon from '@mui/icons-material/Work';
 import BoyIcon from '@mui/icons-material/Boy';
 import Box from '@mui/material/Box';
 import pwc from '../images/PWC.jpg'
@@ -26,7 +24,7 @@ export default function AboutMe() {
           src={pwc}
           id="About-img"
         />
-        <Card sx={{ maxWidth: 465 }} id="about-description">
+        <Card sx={{ maxWidth: 700 }} id="about-description">
             <CardContent >
               <BoyIcon fontSize="large"/>
               <Typography gutterBottom variant="h4" component="div">
