@@ -18,11 +18,9 @@ function EducationCard(props) {
           height="200"
         />
         <CardContent >
-          <div className="education_header">
-            <div className="school_info">
-              <h1>{school.degree}</h1>
-              <h3>{school.year}</h3>
-            </div>
+          <div className="school_info">
+            <h1>{school.degree}</h1>
+            <h3>{school.year}</h3>
           </div>
           {showDescription && 
             <div className="education_description">
@@ -32,15 +30,9 @@ function EducationCard(props) {
             <h4>Description</h4>
             <Button onClick={()=> handleToggle()}>
               {!showDescription && 
-                  <AddCircleOutlineIcon 
-                    // color="error"
-                    fontSize="large"
-                  />}
-                {showDescription && 
-                  <RemoveCircleOutlineIcon 
-                    // color="error"
-                    fontSize="large"
-                  />}
+                <AddCircleOutlineIcon fontSize="large" />}
+              {showDescription && 
+                <RemoveCircleOutlineIcon fontSize="large" />}
             </Button>  
           </div> 
       </CardContent>
