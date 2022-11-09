@@ -18,10 +18,10 @@ function EducationCard(props) {
           height="200"
         />
         <CardContent >
-          <div className="school_info">
+          {!showDescription && <div className="school_info">
             <h1>{school.degree}</h1>
             <h3>{school.year}</h3>
-          </div>
+          </div>}
           {showDescription && 
             <div className="education_description">
               <p>{school.description}</p>
