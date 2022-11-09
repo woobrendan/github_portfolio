@@ -9,25 +9,25 @@ function Education() {
   ))
   return (
     <>
-    <h2>Education</h2>
-    <div className="Card-list">
-      {mappedEducation}
-      {/* <Card sx={{ maxWidth: 345 }}>
-        <CardContent>
-          <WorkIcon />
-          <Typography gutterBottom variant="h4" component="div">
-            Working Experience
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-            7+ Years in Professional Sports
-          </Typography>
-          <ul>
-            <li>SRO Motorsports America</li>
-            <li>Toronto Blue Jays</li>
-          </ul>
-        </CardContent>
-      </Card> */}
-    </div>
+      <h1>Education</h1>
+        <div className="Card-list">
+          {mappedEducation}
+        {/* <Card sx={{ maxWidth: 345 }}>
+          <CardContent>
+            <WorkIcon />
+            <Typography gutterBottom variant="h4" component="div">
+              Working Experience
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              7+ Years in Professional Sports
+            </Typography>
+            <ul>
+              <li>SRO Motorsports America</li>
+              <li>Toronto Blue Jays</li>
+            </ul>
+          </CardContent>
+        </Card> */}
+      </div>
     </>
   )
 }
