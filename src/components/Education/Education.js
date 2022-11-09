@@ -8,6 +8,8 @@ function Education() {
     <EducationCard schoolDetails={school} key={school.schoolName}/>
   ))
   return (
+    <>
+    <h2>Education</h2>
     <div className="Card-list">
       {mappedEducation}
       {/* <Card sx={{ maxWidth: 345 }}>
@@ -26,6 +28,7 @@ function Education() {
         </CardContent>
       </Card> */}
     </div>
+    </>
   )
 }
 
