@@ -1,4 +1,4 @@
-import {projects} from './projectInfo'
+import { projects } from '../seeds/projectInfo.js'
 import Project from './Project'
 import { Typography } from '@mui/material'
 
