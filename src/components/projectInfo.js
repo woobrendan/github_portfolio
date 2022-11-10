@@ -1,10 +1,19 @@
 import appointment from '../images/Add_appointment.gif';
 import jungle from '../images/Jungle_Order.gif';
+import workout from '../images/new-workout.gif';
+import podium from '../images/podium.gif'
 
 export const projects = [
   {
+    name: "Podium Assistant",
+    gif: podium,
+    link: "https://github.com/woobrendan/Podium-Assistant",
+    description: "A personal project designed to reduce time spent on post-race preparation for podiums. Dynamically grabs corresponding drivers based on the Series selected. Upon completetion generates a script with the results and all information related to the winners.",
+    frameworks: "React.js, MongoDB, Express, Node.js"
+  },
+  {
     name: "Work It Out",
-    gif: "placeholder",
+    gif: workout,
     link: "https://github.com/woobrendan/Work-It-Out",
     description: "Work-It-Out is an app created from scratch as a final project for bootcamp students. Students are given the freedom to choose an idea for an app and to use a tech stack of their choosing. Work-It-Out uses ReactJS for the front-end, Express on the back-end and Postgres for database management.",
     frameworks: "ReactJS, PostreSQL, Express"
@@ -12,7 +21,7 @@ export const projects = [
   {
     name: "Jungle Rails",
     gif: jungle,
-    link: "https://github.com/woobrendan/Work-It-Out",
+    link: "https://github.com/woobrendan/Jungle-Rails",
     description: "A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example. Students are dropped into a pre-built app using a new Ruby language and asked to replicate real-world scenarios such as adding features, fixing bugs and adding testing to an existing app.",
     frameworks: "Ruby on Rails, PostreSQL, Active Record, Rspec"
   },
