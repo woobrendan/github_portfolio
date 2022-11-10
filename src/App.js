@@ -1,7 +1,7 @@
 import './Styles/App.scss';
 import AboutMe from './components/About';
 import Experience from './components/experience';
-import Sidebar from './components/Sidebar';
+import Sidebar from './components/SideNavBar/Sidebar';
 import ProjectList from './components/Projects/ProjectList';
 import Skills from './components/Skills';
 
