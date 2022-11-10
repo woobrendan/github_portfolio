@@ -15,6 +15,7 @@ import '../Styles/project.scss'
           component="img"
           image={props.project.gif}
           alt={props.project.name}
+          maxheight="200"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
