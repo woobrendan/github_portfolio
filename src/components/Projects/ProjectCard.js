@@ -7,7 +7,7 @@ import Typography from '@mui/material/Typography';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import '../../Styles/project.scss'
  
- function Project(props) {
+ function ProjectCard(props) {
    return (
     <div className="project-container">
       <Card>
@@ -38,5 +38,5 @@ import '../../Styles/project.scss'
    )
  }
  
- export default Project
+ export default ProjectCard
  

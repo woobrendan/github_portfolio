@@ -1,5 +1,5 @@
 import { projects } from '../../seeds/projectInfo.js'
-import Project from './Project'
+import Project from './ProjectCard'
 import { Typography } from '@mui/material'
 
 function ProjectList() {
