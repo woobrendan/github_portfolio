@@ -9,7 +9,7 @@ export const sliderData = [
   },
   {
     name: 'Toronto Blue Jays',
-    image: 'https://www.mlbstatic.com/team-logos/share/141.jpg'
+    image: 'https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/052016/untitled-1_52.png?itok=4xlcE476'
   },
   {
     name: 'Freedom Mobile',
