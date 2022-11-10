@@ -7,6 +7,9 @@
   .project-container {
     // width: 80%;
 
+    .MuiCardMedia-root {
+      max-height: 500px;
+    }
     .MuiCard-root {
       display: flex;
       flex-direction: column;
