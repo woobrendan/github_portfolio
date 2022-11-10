@@ -2,7 +2,7 @@ import './Styles/App.scss';
 import AboutMe from './components/About';
 import Experience from './components/experience';
 import Sidebar from './components/Sidebar';
-import ProjectList from './components/ProjectList';
+import ProjectList from './components/Projects/ProjectList';
 import Skills from './components/Skills';
 
 function App() {
