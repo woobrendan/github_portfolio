@@ -10,7 +10,7 @@ function EducationCard(props) {
 
   const handleToggle = () => setShowDescription(!showDescription)
   return (
-    <Card sx={{ maxWidth: 700 }} className="education_card">
+    <Card sx={{ width: 650 }} className="education_card">
       <CardMedia
           component="img"
           image={school.imageURL}
