@@ -8,28 +8,23 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import '../../Styles/project.scss'
  
  function ProjectCard(props) {
+   const project = props.project
    return (
     <div className="project-container">
-      <Card>
+      <Card sx={{ width: 650 }}>
         <CardMedia
           component="img"
-          image={props.project.gif}
-          alt={props.project.name}
-          maxheight="200"
+          image={project.gif}
+          alt={project.name}
+          sx={{ height: 550 }}
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            {props.project.name}
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-            {props.project.description}
-            <br></br>
-            <br></br>
-            Frameworks: {props.project.frameworks}
-          </Typography>
+          <h5>{project.name}</h5>
+          <p>{project.description}</p>
+          <p>Frameworks: {project.frameworks}</p>
         </CardContent>
         <CardActions>
-          <Button variant="outlined" href={props.project.link} startIcon={<GitHubIcon />}>
+          <Button variant="outlined" href={project.link} startIcon={<GitHubIcon />}>
             Code
           </Button>
         </CardActions>
