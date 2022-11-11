@@ -65,6 +65,21 @@ export default experience =  [
       }
       
     ]
+  },
+  {
+    company: "Wind Mobile",
+    location: "Oshawa, ON",
+    positions: [
+      {
+        title: "Wind Specialist",
+        year: "Nov 2014 - Jan 2017",
+        duties: [
+          "Consistently met monthly sales goals while delivering exceptional customer service",
+          "Trained new employees to better communicate and sell Wind services and how to properly manage money and sales"
+        ]
+      }
+      
+    ]
   }
 ]
 
