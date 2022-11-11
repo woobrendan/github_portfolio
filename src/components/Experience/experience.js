@@ -2,13 +2,19 @@ import { Typography } from "@mui/material"
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import autograph from '../images/Laguna-Autograph.jpg'
-import irb from '../images/IRB.jpeg'
-import tbj from '../images/TBJ.jpeg';
-import sro from '../images/sro.jpeg'
-import '../Styles/experience.scss'
+import autograph from '../../images/Laguna-Autograph.jpg'
+import irb from '../../images/IRB.jpeg'
+import tbj from '../../images/TBJ.jpeg';
+import sro from '../../images/sro.jpeg'
+import '../../Styles/experience.scss'
+import { experience } from '../../seeds/experience';
+import ExperienceCard from "./ExperienceCard";
 
 export default function Experience () {
+
+  const mappedExperiences = experience.map((experience, index) => (
+    <ExperienceCard key={experience.company} experience={experience}/>
+  ))
   return (
     <div className="experience-container" id="Experience">
       <Typography variant="h3" gutterBottom component="div">
