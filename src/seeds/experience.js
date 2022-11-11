@@ -2,7 +2,7 @@ import irb from '../images/IRB.jpeg'
 import tbj from '../images/TBJ.jpeg';
 import sro from '../images/sro.jpeg'
 
-export default experience =  [
+export const experience = [
   {
     company: "SRO Motorsports America",
     location: "Various, USA",
