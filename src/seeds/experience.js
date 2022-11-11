@@ -33,6 +33,38 @@ export default experience =  [
         ]
       }
     ]
+  },
+  {
+    company: "Immigration Refugee Board of Canada",
+    location: "Toronto, ON",
+    positions: [
+      {
+        title: "Assistant to Coordinating Member",
+        year: "Sept 2021 - Dec 2021",
+        duties: [
+          "Worked a casual contract supporting multiple teams and managers within the Refugee Protection Division (RPD)",
+          "Coordinated schedules for various managers, ensuring organized days and meetings",
+          "Facilitated member hearing schedules and caseloads, updating HR software as required"
+        ]
+      }
+      
+    ]
+  },
+  {
+    company: "Toronto Blue Jays",
+    location: "Toronto, ON",
+    positions: [
+      {
+        title: "Warehouse Assistant",
+        year: "Feb 2018 - Nov 2018",
+        duties: [
+          "Coordinated the movement of all Blue Jays product, receiving and distributing to various vendor locations throughout the stadium and stores",
+          "Maintained multiple warehouses to ensure cleanliness and inventory accuracy",
+          "Re-organized a warehouse to a new organizational style leading to time saved"
+        ]
+      }
+      
+    ]
   }
 ]
 
