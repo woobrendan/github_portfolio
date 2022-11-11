@@ -4,6 +4,17 @@
   justify-content: center;
   margin-top: 20px;
 
+  .project-container {
+    margin: 30px 10px 30px 10px;
+  
+    h5 {
+      background: gold;
+      color: black;
+      font-size: 25px;
+      margin-top: 0px;
+      margin-bottom: 10px;
+    }
+
     .MuiCardMedia-root {
       max-height: 500px;
     }
