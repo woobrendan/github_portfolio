@@ -1,18 +1,17 @@
 import { projects } from '../../seeds/projectInfo.js'
 import Project from './ProjectCard'
-import { Typography } from '@mui/material'
 
 function ProjectList() {
   const mappedProjects = projects.map((project, index) => (
     <Project project={project} key={index}/>
   ))
   return (
-    <div id="project-list">
-      <Typography variant="h3" gutterBottom component="div">
-        Projects
-      </Typography>
-      {mappedProjects}
-    </div>
+    <>
+      <h1>Projects</h1>
+      <div id="project-list">
+        {mappedProjects}
+      </div>
+    </>
   )
 }
 
