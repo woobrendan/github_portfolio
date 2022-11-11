@@ -1,7 +1,12 @@
+import irb from '../images/IRB.jpeg'
+import tbj from '../images/TBJ.jpeg';
+import sro from '../images/sro.jpeg'
+
 export default experience =  [
   {
     company: "SRO Motorsports America",
     location: "Various, USA",
+    image: sro,
     positions: [
       {
         title: "Team Relations Coordinator",
@@ -37,6 +42,7 @@ export default experience =  [
   {
     company: "Immigration Refugee Board of Canada",
     location: "Toronto, ON",
+    image: irb,
     positions: [
       {
         title: "Assistant to Coordinating Member",
@@ -53,6 +59,7 @@ export default experience =  [
   {
     company: "Toronto Blue Jays",
     location: "Toronto, ON",
+    image: tbj,
     positions: [
       {
         title: "Warehouse Assistant",
@@ -69,6 +76,7 @@ export default experience =  [
   {
     company: "Wind Mobile",
     location: "Oshawa, ON",
+    image: "https://www.thecanadianbazaar.com/wp-content/uploads/2019/12/wind-mobile-logo.jpg",
     positions: [
       {
         title: "Wind Specialist",
