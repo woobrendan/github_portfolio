@@ -15,8 +15,8 @@ export const projects = [
     name: "Work It Out",
     gif: workout,
     link: "https://github.com/woobrendan/Work-It-Out",
-    description: "Work-It-Out is an app created from scratch as a final project for bootcamp students. Students are given the freedom to choose an idea for an app and to use a tech stack of their choosing. Work-It-Out uses ReactJS for the front-end, Express on the back-end and Postgres for database management.",
-    frameworks: "ReactJS, PostreSQL, Express"
+    description: "Work It Out is an exercise tracking app created from an idea to full operation front and back end application. Users are able to track their exercise stats including weight used and numbers or reps. Users can also view different exercises for each muscle group including a how-to video.",
+    frameworks: "React.js, PostreSQL, Express, Node.js"
   },
   {
     name: "Jungle Rails",
@@ -29,9 +29,9 @@ export const projects = [
     name: "Scheduler",
     gif: appointment,
     link: "https://github.com/woobrendan/scheduler",
-    description: "Interview Scheduler is an introductory to React project. This project works to get bootcamp students comfortable with using React to develop interactive UI's. Creating various components and passing props, state and functions throughout to create a seamless user environment. Interview Scheduler is the first introduction to different testing frameworks such as Jest and Cypress. Throughout we look at the importance of testing and looking to have efficient coverage for our functions and applications",
-    frameworks: "ReactJS, PostreSQL, Jest, Cypress, Storybook"
-  },
+    description: "Interview scheduler allows users to see available list of appointments, along with interviewers who are available on that day. Users can then book or edit an appointment with an interviewer and the app will update state to reflect the new appointment and show remaining slots available on a given day.",
+    frameworks: "React.js, PostreSQL, Jest, Cypress, Storybook"
+  }
 ]
 
 // module.exports = {projects}
