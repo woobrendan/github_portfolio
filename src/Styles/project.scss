@@ -1,11 +1,8 @@
 #project-list {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-top: 20px;
-
-  .project-container {
-    // width: 80%;
 
     .MuiCardMedia-root {
       max-height: 500px;
@@ -39,9 +36,6 @@
       color: white !important;
       border: 1px solid gold;
       border-radius: 25px;
-      width: 70%;
-      margin: 15px;
-      margin-left: 15%;
 
       p {
         text-align: left;
