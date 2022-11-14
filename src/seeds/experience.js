@@ -74,12 +74,12 @@ export const experience = [
     ]
   },
   {
-    company: "Wind Mobile",
+    company: "Freedom Mobile",
     location: "Oshawa, ON",
-    image: "https://www.thecanadianbazaar.com/wp-content/uploads/2019/12/wind-mobile-logo.jpg",
+    image: "https://play-lh.googleusercontent.com/AV3-t3GA3KxeHJ9ol8yfMTttqi7n3U43E0G--jOBJblB1sFYvTSIZ7BEIZbDEDuXtLE",
     positions: [
       {
-        title: "Wind Specialist",
+        title: "Freedom Specialist",
         year: "Nov 2014 - Jan 2017",
         duties: [
           "Consistently met monthly sales goals while delivering exceptional customer service",
