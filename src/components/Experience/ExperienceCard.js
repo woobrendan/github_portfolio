@@ -20,10 +20,7 @@ function ExperienceCard(props) {
         />
         <CardContent>
           <h2>{experience.company}</h2>
-          <h5>{experience.location}</h5>
-          <Typography gutterBottom variant="subtitle1" component="div">
-            Assistant to Coordinating Member
-          </Typography>
+          <h5>Location: {experience.location}</h5>
           <div className="work-info">
             {mappedJobs}
           </div>           
