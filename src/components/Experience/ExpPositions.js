@@ -1,12 +1,16 @@
-function ExperienceItem() {
+function ExperienceItem(props) {
+  
+  const position = props.position
+  const mappedDuties = position.duties.mappedDuties((duty, index) => (
+    <li>
+      {duty}
+    </li>
+  ))
  return (
    <>
-    <Typography gutterBottom variant="subtitle1" component="div">
-      Assistant to Coordinating Member
-    </Typography>
-      <div className="work-info">
-        <p>Location: Toronto, ON</p>
-        <p>Sept 2021 - Dec 2021</p>
+    <h3>{position.title}</h3>
+    <div className="work-info">
+        <p>{position.year}</p>
       </div>
       <ul className="job-description-list">
         <li><span>
