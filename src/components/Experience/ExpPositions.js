@@ -1,14 +1,14 @@
 function ExperienceItem(props) {
 
   const position = props.position
-  const mappedDuties = position.duties.mappedDuties((duty, index) => (
+  const mappedDuties = position.duties.map((duty, index) => (
     <li key={index}>
       {duty}
     </li>
   ))
  return (
    <>
-    <div className="work-info">
+    <div className="position_header">
       <h3>{position.title}</h3>
       <p>{position.year}</p>
     </div>
