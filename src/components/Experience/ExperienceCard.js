@@ -1,16 +1,25 @@
-function ExperienceCard() {
+import { Card, CardMedia, CardContent, Typography } from '@mui/material'
+import ExpPositions from './ExpPositions';
+
+
+function ExperienceCard(props) {
+  const experience = props.experience;
+  const positions = experience.positions
+
+  const mappedJobs = positions.map((position, index) => (
+    <ExpPositions key={index }position={position} />
+  ))
+
   return (
     <>
       <Card >
         <CardMedia
           component="img"
-          image={irb}
-          alt="Immigration Refugee Board of Canada"
+          image={experience.image}
+          alt={experience.company}
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            Immigration Refugee Board of Canada
-          </Typography>
+          <h2>{experience.company}</h2>
           <Typography gutterBottom variant="subtitle1" component="div">
             Assistant to Coordinating Member
           </Typography>
