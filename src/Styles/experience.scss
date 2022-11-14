@@ -4,6 +4,7 @@
   align-items: center;
   margin-top: 20px;
   padding-bottom: 80px;
+
   .MuiPaper-root {
     background-color: rgba(63, 59, 59, 0.283) !important;
     color: white !important;
@@ -27,8 +28,14 @@
 
   .work-info {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
-    margin: -5px;
+    margin: 0 3%;
+
+    .position_header {
+      display: inherit;
+      justify-content: space-between;
+    }
   }
 
   .job-description-list {
