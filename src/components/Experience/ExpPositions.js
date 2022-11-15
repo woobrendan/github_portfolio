@@ -16,12 +16,12 @@ function ExperienceItem(props) {
 
   const withToggle = (
     <>
+      <div className="position_header">
+        <h3>{position.title}</h3>
+        <p>{position.year}</p>
+      </div>
     {showDetails && 
       <>
-        <div className="position_header">
-          <h3>{position.title}</h3>
-          <p>{position.year}</p>
-        </div>
         <ul className="job-description-list">
           {mappedDuties}
         </ul>
@@ -32,9 +32,9 @@ function ExperienceItem(props) {
         <h4>Details</h4>
         <Button onClick={()=> handleToggle()}>
           {!showDetails && 
-            <AddCircleOutlineIcon fontSize="large" />}
+            <AddCircleOutlineIcon fontSize="medium" />}
           {showDetails && 
-            <RemoveCircleOutlineIcon fontSize="large" />}
+            <RemoveCircleOutlineIcon fontSize="medium" />}
         </Button>  
       </div>
       }
