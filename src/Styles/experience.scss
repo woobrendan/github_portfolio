@@ -15,9 +15,13 @@
     &:hover {
       background-color: rgba(101, 98, 98, 0.906) !important;
       color: gold !important;
+
+      .position_header, h3, h2 {
+        color: orange;
+      }
       
       .MuiSvgIcon-root {
-        color: white !important;
+        color: orange !important;
       }
     }
 
