@@ -1,13 +1,18 @@
-import { Card, CardMedia, CardContent, Typography } from '@mui/material'
+import { Card, CardMedia, CardContent } from '@mui/material'
 import ExpPositions from './ExpPositions';
 
 
 function ExperienceCard(props) {
+
   const experience = props.experience;
   const positions = experience.positions
 
   const mappedJobs = positions.map((position, index) => (
-    <ExpPositions key={index }position={position} />
+    <ExpPositions 
+      key={index } 
+      position={position}
+      hasToggle={index > 0 ? true : false} 
+    />
   ))
 
   return (
