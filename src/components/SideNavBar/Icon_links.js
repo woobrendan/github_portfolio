@@ -37,6 +37,11 @@ export default function IconLinks() {
               </a>
           </li>
           <li>
+              <a href="#project-list" className="project-icon">
+                <StickyNote2Icon fontSize="large"/>
+              </a>
+          </li>
+          <li>
               <a href="#skills-list" className="skills-icon">
                 <ConstructionIcon fontSize="large"/>
               </a>
@@ -45,11 +50,6 @@ export default function IconLinks() {
             <a href="#Experience" className="work-icon">
               <WorkHistoryIcon fontSize="large"/>
             </a>
-          </li>
-          <li>
-              <a href="#project-list" className="project-icon">
-                <StickyNote2Icon fontSize="large"/>
-              </a>
           </li>
           <li>
             <a href="#Contact" className="contact-icon">
