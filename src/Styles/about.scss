@@ -26,6 +26,14 @@
       }
     }
 
+    .MuiPaper-root :hover {
+      color: gold;
+
+      a {
+        color: white;
+      }
+    }
+
     #About-img {
       border-radius: 25px;
       margin: 0px 30px 0px 30px;
@@ -42,7 +50,6 @@
     .Card-list {
       display: flex;
       justify-content: center;
-      // flex-direction: column;
       flex-wrap: wrap;
       margin-left: 5%;
       margin-right: 5%;
@@ -89,27 +96,3 @@
   }
 
 }
-
-// .MuiCardContent-root {
-//   p {
-//     color: white;
-
-//     &:hover {
-//       color: gold;
-//     }
-//   }
-//   ul {
-//     padding-left: 0px;
-
-//     .school {
-//       font-weight: bold;
-//       font-size: 17px;
-//     }
-
-//     li {
-//       list-style: none;
-//       padding-bottom: 7px;
-//       font-size: 12px;
-//     }
-//   }
-// }
