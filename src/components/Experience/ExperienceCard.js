@@ -25,7 +25,7 @@ function ExperienceCard(props) {
       />
       <CardContent>
         <h2>{experience.company}</h2>
-        <h5>Location: {experience.location}</h5>
+        <h4>Location: {experience.location}</h4>
         <div className="work-info">
           {mappedJobs}
         </div>           
