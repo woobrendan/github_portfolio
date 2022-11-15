@@ -12,9 +12,9 @@ function App() {
       <h3>Full Stack Developer</h3>
       <Sidebar />
       <AboutMe />
+      <ProjectList />
       <Skills />
       <Experience />
-      <ProjectList />
       {/* <div id="Contact">
         Email Me
       </div> */}
