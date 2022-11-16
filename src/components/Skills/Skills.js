@@ -30,18 +30,21 @@ function Skills() {
   ));
 
   return (
-    <div id="skills-list">
-      <Typography variant="h3" gutterBottom component="div">
-        Skills
-      </Typography>
-      {/* {mappedSkills} */}
-      {skills.map((skill, index) => (
-        <div className="skill_card" key={skill.title}>
-          <h3>{skill.title}</h3>
-          <SkillList skills={skill.info} />
-        </div>
-      ))}
-    </div>
+    <>
+      <h1>Skills</h1>
+      <div id="skills-list">
+        {skills.map((skill, index) => (
+          <Card key={index}>
+            <CardContent>
+                <div className="skill_card" key={skill.title}>
+                  <h2>{skill.title}</h2>
+                  <SkillList skills={skill.info} />
+                </div>
+            </CardContent>
+          </Card>
+        ))}
+      </div>
+    </>
   )
 }
 
