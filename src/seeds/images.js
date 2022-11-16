@@ -5,7 +5,7 @@ export const sliderData = [
   },
   {
     name: 'IRB',
-    image: 'https://www.lehallaw.com/wp-content/uploads/2020/11/immigration-refugee-board-canada.jpg'
+    image: 'https://media-exp1.licdn.com/dms/image/C560BAQFP6LHdm0oYDQ/company-logo_200_200/0/1581369716945?e=2147483647&v=beta&t=vh76ufP8DUrm2MtvOTII_wFE5Kd2-3W6pO-YI63it68'
   },
   {
     name: 'Toronto Blue Jays',
