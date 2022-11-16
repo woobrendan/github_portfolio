@@ -3,6 +3,7 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import { skills } from "../../seeds/skill_info";
 import '../../Styles/skills.scss'
+import SkillList from "./SkillList";
 
 function Skills() {
   console.log('skills', skills)
@@ -33,7 +34,13 @@ function Skills() {
       <Typography variant="h3" gutterBottom component="div">
         Skills
       </Typography>
-      {mappedSkills}
+      {/* {mappedSkills} */}
+      {skills.map((skill, index) => (
+        <div className="skill_card" key={skill.title}>
+          <h3>{skill.title}</h3>
+          <SkillList skills={skill.info} />
+        </div>
+      ))}
     </div>
   )
 }
