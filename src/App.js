@@ -4,6 +4,7 @@ import Experience from './components/Experience/experience';
 import Sidebar from './components/SideNavBar/Sidebar';
 import ProjectList from './components/Projects/ProjectList';
 import Skills from './components/Skills/Skills';
+import Education from './components/Education/Education';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <h3>Full Stack Developer</h3>
       <Sidebar />
       <AboutMe />
+      <Education />
       <ProjectList />
       <Skills />
       <Experience />
