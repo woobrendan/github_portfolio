@@ -5,7 +5,9 @@ function SkillList(props) {
       <ul className="skill-info-list">
         {props.skills.map((skill, index) => (
           <li key={index}>
-            {skill}
+            <span>
+              {skill}
+            </span>
           </li>
         ))}
       </ul>
