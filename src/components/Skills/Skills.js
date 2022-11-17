@@ -10,7 +10,7 @@ function Skills() {
       <h1>Skills</h1>
       <div id="skills-list">
         {skills.map((skill, index) => (
-          <Card key={index}>
+          <Card key={index} sx={{ width: 650 }}>
             <CardContent>
                 <div className="skill_card" key={skill.title}>
                   <h2>{skill.title}</h2>
