@@ -1,7 +1,6 @@
 import '../Styles/about.scss'
 import Box from '@mui/material/Box';
 import pwc from '../images/PWC.jpg'
-import Education from './Education/Education';
 import ImageSlider from './ImageSlider';
 import AboutDescription from './AboutDescription';
 
@@ -24,7 +23,6 @@ export default function AboutMe() {
         </div>
         <AboutDescription />
       </div>
-      <Education />
     </div>
   )
 }
