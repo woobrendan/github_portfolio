@@ -6,25 +6,23 @@
   padding-bottom: 80px;
 
   .MuiPaper-root {
-    background-color: rgba(63, 59, 59, 0.283) !important;
-    color: white !important;
+    background-color: rgba(63, 59, 59, 0.283);
+    color: white;
     border: 1px solid gold;
     border-radius: 25px;
-    width: 60%;
-    margin: 15px;
 
     &:hover {
-      background-color: rgba(101, 98, 98, 0.906) !important;
-      color: gold !important;
+      background-color: rgba(101, 98, 98, 0.906);
+      color: gold;
     }
 
     .skill-info-list {
       width: 50%;
       margin: auto;
       display: block;
+      
       li {
         font-size: 17px;
-        // padding-bottom: 10px;
         text-align: left;
         width: 50%;
         margin: auto;
