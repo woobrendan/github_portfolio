@@ -5,10 +5,10 @@ export const skills = [
   },
   {
     title: "Frameworks/Libraries", 
-    info: ["Node.js", "React", "Material UI",  "Express", "jQuery", "Bootstrap", "SASS", "Rails", "Active Record", "PostgreSQL"]
+    info: ["React", "Node.js", "MongoDB", "Material UI",  "Express", "jQuery", "Bootstrap", "SASS", "Rails", "Active Record", "PostgreSQL"]
   },
   {
     title: "Testing",
-    info: ["Cypress", "Jest", "Storybook", "Jest", "Mocha"]
+    info: ["Cypress", "Jest", "Storybook", "Mocha"]
   }
 ]
