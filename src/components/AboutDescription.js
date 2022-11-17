@@ -1,4 +1,5 @@
 import {Card, CardContent} from '@mui/material'
+import BoyIcon from '@mui/icons-material/Boy';
 
 function AboutDescription() {
   return (
