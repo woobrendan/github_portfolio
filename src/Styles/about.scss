@@ -1,5 +1,4 @@
 #About-container {
-  padding-bottom: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,6 +21,12 @@
       margin: 10px 0px 30px 0px;
     }
 
+    #About-img {
+      border-radius: 25px;
+      margin: 0px 30px;
+      border: 1px solid gold;
+    }
+
     #about-description {
       background-color: rgba(63, 59, 59, 0.283);
       color: white;
@@ -37,59 +42,4 @@
       }
     }
   }
-
-  #About-img {
-    border-radius: 25px;
-    margin: 0px 30px 0px 30px;
-    border: 1px solid gold;
-  }
-
-
-  .Card-list {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-left: 5%;
-    margin-right: 5%;
-
-    .MuiPaper-root {
-      background-color: rgba(63, 59, 59, 0.283) !important;
-      color: white !important;
-      border: 1px solid gold;
-      border-radius: 25px;
-
-      &:hover {
-        color: gold !important;
-        background-color: rgba(101, 98, 98, 0.906) !important;
-
-        p {
-          color: gold !important;
-        }
-
-        .MuiSvgIcon-root {
-          color: gold;
-        }
-      }
-    }
-  }
-
-  .education_card {
-    margin: 20px 10px 20px 10px;
-
-    
-    .education_description {
-      text-align: left;
-      margin: 2%;
-    }
-    
-    .description_toggle {
-      display: flex;
-      justify-content: center;
-      
-      .MuiSvgIcon-root {
-        color: white;
-      }
-    }
-  }
-
 }
