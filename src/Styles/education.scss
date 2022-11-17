@@ -10,6 +10,7 @@
     color: white !important;
     border: 1px solid gold;
     border-radius: 25px;
+    margin: 20px 10px 20px 10px;
 
     &:hover {
       color: gold !important;
@@ -20,27 +21,41 @@
       }
 
       .MuiSvgIcon-root {
-        color: gold;
+        color: gold !important;
+      }
+    }
+
+    .education_description {
+      text-align: left;
+      margin: 2%;
+    }
+    
+    .description_toggle {
+      display: flex;
+      justify-content: center;
+      
+      .MuiSvgIcon-root {
+        color: white;
       }
     }
   }
 }
 
-.education_card {
-  margin: 20px 10px 20px 10px;
+// .education_card {
+//   // margin: 20px 10px 20px 10px;
 
   
-  .education_description {
-    text-align: left;
-    margin: 2%;
-  }
+//   .education_description {
+//     text-align: left;
+//     margin: 2%;
+//   }
   
-  .description_toggle {
-    display: flex;
-    justify-content: center;
+//   .description_toggle {
+//     display: flex;
+//     justify-content: center;
     
-    .MuiSvgIcon-root {
-      color: white;
-    }
-  }
-}
+//     .MuiSvgIcon-root {
+//       color: white;
+//     }
+//   }
+// }
