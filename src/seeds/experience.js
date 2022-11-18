@@ -1,6 +1,7 @@
 import irb from '../images/IRB.jpeg'
 import tbj from '../images/TBJ.jpeg';
 import sro from '../images/sro.jpeg'
+import freedom from '../images/freedom.png';
 
 export const experience = [
   {
@@ -76,7 +77,7 @@ export const experience = [
   {
     company: "Freedom Mobile",
     location: "Oshawa, ON",
-    image: "https://play-lh.googleusercontent.com/AV3-t3GA3KxeHJ9ol8yfMTttqi7n3U43E0G--jOBJblB1sFYvTSIZ7BEIZbDEDuXtLE",
+    image: freedom,
     positions: [
       {
         title: "Freedom Specialist",
