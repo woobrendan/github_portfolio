@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/github_portfolio/static/css/main.db7e700b.css",
-    "main.js": "/github_portfolio/static/js/main.ca28ff13.js",
+    "main.css": "/github_portfolio/static/css/main.8c282eb9.css",
+    "main.js": "/github_portfolio/static/js/main.276296ed.js",
     "static/js/787.2f41dc65.chunk.js": "/github_portfolio/static/js/787.2f41dc65.chunk.js",
     "static/media/new-workout.gif": "/github_portfolio/static/media/new-workout.37759f26fb098d470fec.gif",
     "static/media/podium.gif": "/github_portfolio/static/media/podium.2e2ef11242bb1c791189.gif",
@@ -12,14 +12,15 @@
     "static/media/sro.jpeg": "/github_portfolio/static/media/sro.49bdb49d1afe5caaff96.jpeg",
     "static/media/Add_appointment.gif": "/github_portfolio/static/media/Add_appointment.e377f41be1ae66bbb5a7.gif",
     "static/media/PWC.jpg": "/github_portfolio/static/media/PWC.d7c860c1ce75a436879f.jpg",
+    "static/media/freedom.png": "/github_portfolio/static/media/freedom.ca471a5c48afb0487378.png",
     "index.html": "/github_portfolio/index.html",
     "static/media/circle-check-solid.svg": "/github_portfolio/static/media/circle-check-solid.f16c3ae53cd894a1e5a1.svg",
-    "main.db7e700b.css.map": "/github_portfolio/static/css/main.db7e700b.css.map",
-    "main.ca28ff13.js.map": "/github_portfolio/static/js/main.ca28ff13.js.map",
+    "main.8c282eb9.css.map": "/github_portfolio/static/css/main.8c282eb9.css.map",
+    "main.276296ed.js.map": "/github_portfolio/static/js/main.276296ed.js.map",
     "787.2f41dc65.chunk.js.map": "/github_portfolio/static/js/787.2f41dc65.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.db7e700b.css",
-    "static/js/main.ca28ff13.js"
+    "static/css/main.8c282eb9.css",
+    "static/js/main.276296ed.js"
   ]
 }
