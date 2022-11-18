@@ -5,6 +5,7 @@ import Sidebar from './components/SideNavBar/Sidebar';
 import ProjectList from './components/Projects/ProjectList';
 import Skills from './components/Skills/Skills';
 import Education from './components/Education/Education';
+import ToTop from './components/ToTop';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       {/* <div id="Contact">
         Email Me
       </div> */}
+      <ToTop />
     </div>
   );
 }
