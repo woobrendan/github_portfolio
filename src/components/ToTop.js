@@ -1,13 +1,14 @@
 import { useState, useEffect } from 'react';
 import ArrowCircleUpTwoToneIcon from '@mui/icons-material/ArrowCircleUpTwoTone';
 import { IconButton } from '@mui/material'
+import '../Styles/toTop.scss'
 
 function ToTop() {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      window.scrollY > 100 ? setIsVisible(true) : setIsVisible(false)
+      window.scrollY > 800 ? setIsVisible(true) : setIsVisible(false)
     })
   })
 
@@ -18,13 +19,13 @@ function ToTop() {
     })
   }
   return (
-    <div className="to_top">
+    <>
       {isVisible && 
-        <IconButton onClick={scrollUp} id="To-Top-Button">
+        <IconButton onClick={scrollUp} id="to_top">
           <ArrowCircleUpTwoToneIcon  />
         </IconButton>
       }
-    </div>
+    </>
   )
 }
 
