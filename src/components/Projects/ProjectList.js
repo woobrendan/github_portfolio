@@ -11,7 +11,7 @@ function ProjectList() {
     <ProjectSide
       project={project} 
       key={index}
-      index={index}
+      index={index + 1}
     
     />
   ))
