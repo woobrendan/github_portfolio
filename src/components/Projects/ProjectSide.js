@@ -7,7 +7,7 @@ function ProjectSide(props) {
   return (
     <section className="project_side_view">
       <div className="project_img">
-
+        <img src={project.gif} alt={project.name} />
       </div>
       <div className="project_info">
         <h5>{project.name}</h5>
