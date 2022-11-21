@@ -88,13 +88,19 @@
       font-size: 25px;
       margin-top: 0px;
       margin-bottom: 10px;
+      text-align: center;
     }
 
     .MuiButton-root {
-      max-width: 22%;
       align-self: center;
       border: 1px solid gold;
       color: gold;
+
+      &:hover {
+        color: black;
+        border-color: white;
+        background-color: gold !important;
+      }
     }
   }
 
