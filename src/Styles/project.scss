@@ -63,8 +63,9 @@
 
 .project_side_view {
   display: flex;
-  margin: 1% 3%;
+  margin: 1% 3% 1% 5%;
   align-items: center;
+  min-height: 450px;
   
   .project_img {
     width: 60%;
@@ -80,7 +81,7 @@
     text-align: left;
     display: flex;
     flex-direction: column;
-    margin-top: 5%;
+    // margin-top: 5%;
 
     h5 {
       background: gold;
