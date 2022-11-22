@@ -3,9 +3,9 @@ import Project from './ProjectCard'
 import ProjectSide from './ProjectSide.js'
 
 function ProjectList() {
-  const mappedProjects = projects.map((project, index) => (
-    <Project project={project} key={index}/>
-  ))
+  // const mappedProjects = projects.map((project, index) => (
+  //   <Project project={project} key={index}/>
+  // ))
 
   const testProject = projects.map((project, index) => (
     <ProjectSide
@@ -20,9 +20,9 @@ function ProjectList() {
   return (
     <>
       <h1>Projects</h1>
-      <div id="project-list">
+      {/* <div id="project-list">
         {mappedProjects}
-      </div>
+      </div> */}
       <div className="test">
         {testProject}
       </div>
