@@ -5,7 +5,6 @@ function ProjectSide(props) {
   const project = props.project
   const isEven = props.index % 2 === 0 
 
-
   const projectImg = (
     <div className="project_img">
       <img src={project.gif} alt={project.name} />
@@ -26,7 +25,7 @@ function ProjectSide(props) {
 
   return (
     <section className="project_side_view">
-      {isEven 
+      {!isEven 
         ? <>{projectImg}{projectDetails}</>
         : <>{projectDetails}{projectImg}</>
       }
