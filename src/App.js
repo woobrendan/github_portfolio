@@ -18,12 +18,11 @@ function App() {
       <Education />
       <ProjectList />
       <Skills />
-      <Experience />
+      <ExpCarousel />
       {/* <div id="Contact">
         Email Me
       </div> */}
       <ToTop />
-      <ExpCarousel />
     </div>
   );
 }
