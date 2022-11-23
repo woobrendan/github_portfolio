@@ -4,6 +4,29 @@
   justify-content: center;
   margin-top: 20px;
   padding-bottom: 80px;
+  position: relative;
+
+  #next_click {
+    position: absolute;
+    top: 25%;
+    right: 22%;
+   
+  }
+
+  #prev_click {
+    position: absolute;
+    top: 25%;
+    left: 22%;
+  }
+
+  .nav_arrow {
+    color: gold;
+
+    .MuiSvgIcon-root {
+      width: 10vh;
+      height: 10vh;
+    }
+  }
 
   .slide_active {
     .MuiPaper-root {
