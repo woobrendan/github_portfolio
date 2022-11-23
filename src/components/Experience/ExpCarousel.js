@@ -1,6 +1,10 @@
 import { useState } from 'react'
 import { experience } from '../../seeds/experience';
 import ExperienceCard from './ExperienceCard';
+import ArrowCircleLeftIcon from '@mui/icons-material/ArrowCircleLeft';
+import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
+import { IconButton } from '@mui/material'
+import '../../Styles/experience.scss'
 
 function ExpCarousel() {
 
@@ -20,8 +24,15 @@ function ExpCarousel() {
   ))
   
   return (
-    <>
-    </>
+    <div clasName="experience-container">
+      {experienceCards}
+      <IconButton onClick={() => handleNextClick()} >
+        <ArrowCircleLeftIcon  />
+      </IconButton>
+      <IconButton onClick={() => handleNextClick('next')} >
+        <ArrowCircleRightIcon  />
+      </IconButton>
+    </div>
   )
 }
 
