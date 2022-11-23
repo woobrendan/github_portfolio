@@ -6,6 +6,7 @@ import ProjectList from './components/Projects/ProjectList';
 import Skills from './components/Skills/Skills';
 import Education from './components/Education/Education';
 import ToTop from './components/ToTop';
+import ExpCarousel from './components/Experience/ExpCarousel';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         Email Me
       </div> */}
       <ToTop />
+      <ExpCarousel />
     </div>
   );
 }
