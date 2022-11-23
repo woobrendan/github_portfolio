@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/github_portfolio/static/css/main.920558af.css",
-    "main.js": "/github_portfolio/static/js/main.a1850e34.js",
+    "main.css": "/github_portfolio/static/css/main.ceb36eaf.css",
+    "main.js": "/github_portfolio/static/js/main.94362f4a.js",
     "static/js/787.2f41dc65.chunk.js": "/github_portfolio/static/js/787.2f41dc65.chunk.js",
     "static/media/new-workout.gif": "/github_portfolio/static/media/new-workout.7e0926e88215a5560a98.gif",
     "static/media/podium.gif": "/github_portfolio/static/media/podium.2e2ef11242bb1c791189.gif",
@@ -15,12 +15,12 @@
     "static/media/freedom.png": "/github_portfolio/static/media/freedom.ca471a5c48afb0487378.png",
     "index.html": "/github_portfolio/index.html",
     "static/media/circle-check-solid.svg": "/github_portfolio/static/media/circle-check-solid.f16c3ae53cd894a1e5a1.svg",
-    "main.920558af.css.map": "/github_portfolio/static/css/main.920558af.css.map",
-    "main.a1850e34.js.map": "/github_portfolio/static/js/main.a1850e34.js.map",
+    "main.ceb36eaf.css.map": "/github_portfolio/static/css/main.ceb36eaf.css.map",
+    "main.94362f4a.js.map": "/github_portfolio/static/js/main.94362f4a.js.map",
     "787.2f41dc65.chunk.js.map": "/github_portfolio/static/js/787.2f41dc65.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.920558af.css",
-    "static/js/main.a1850e34.js"
+    "static/css/main.ceb36eaf.css",
+    "static/js/main.94362f4a.js"
   ]
 }
