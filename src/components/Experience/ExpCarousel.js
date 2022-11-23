@@ -25,7 +25,6 @@ function ExpCarousel() {
   
   return (
     <section className="experience-carousel">
-      {experienceCards}
       <IconButton 
         onClick={() => handleNextClick()} 
         id="prev_click"
@@ -33,6 +32,7 @@ function ExpCarousel() {
       >
         <ArrowCircleLeftIcon  />
       </IconButton>
+      {experienceCards}
       <IconButton 
         onClick={() => handleNextClick('next')} 
         id="next_click" 
