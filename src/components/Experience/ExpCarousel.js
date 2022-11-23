@@ -24,23 +24,26 @@ function ExpCarousel() {
   ))
   
   return (
-    <section className="experience-carousel">
-      <IconButton 
-        onClick={() => handleNextClick()} 
-        id="prev_click"
-        className="nav_arrow"
-      >
-        <ArrowCircleLeftIcon  />
-      </IconButton>
-      {experienceCards}
-      <IconButton 
-        onClick={() => handleNextClick('next')} 
-        id="next_click" 
-        className="nav_arrow"
-      >
-        <ArrowCircleRightIcon />
-      </IconButton>
-    </section>
+    <>
+      <h1>Work Experience</h1>
+      <section className="experience-carousel" id="Experience">
+        <IconButton 
+          onClick={() => handleNextClick()} 
+          id="prev_click"
+          className="nav_arrow"
+        >
+          <ArrowCircleLeftIcon  />
+        </IconButton>
+        {experienceCards}
+        <IconButton 
+          onClick={() => handleNextClick('next')} 
+          id="next_click" 
+          className="nav_arrow"
+        >
+          <ArrowCircleRightIcon />
+        </IconButton>
+      </section>
+    </>
   )
 }
 
