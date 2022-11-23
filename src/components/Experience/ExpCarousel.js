@@ -4,7 +4,7 @@ import ExperienceCard from './ExperienceCard';
 import ArrowCircleLeftIcon from '@mui/icons-material/ArrowCircleLeft';
 import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 import { IconButton } from '@mui/material'
-import '../../Styles/experience.scss'
+import '../../Styles/ExpCarousel.scss'
 
 function ExpCarousel() {
 
@@ -24,7 +24,7 @@ function ExpCarousel() {
   ))
   
   return (
-    <div clasName="experience-container">
+    <div className="experience-carousel">
       {experienceCards}
       <IconButton onClick={() => handleNextClick()} >
         <ArrowCircleLeftIcon  />
