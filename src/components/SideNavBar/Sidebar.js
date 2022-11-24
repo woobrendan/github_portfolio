@@ -1,10 +1,11 @@
 import IconLinks from "./Icon_links"
 import '../../Styles/nav-bar.scss'
 
-export default function Sidebar() {
+export default function Sidebar({ getComponent }) {
+
   return (
     <div className="nav-bar">
-      <IconLinks />
+      <IconLinks getComponent={getComponent}/>
     </div>
   )
 }
