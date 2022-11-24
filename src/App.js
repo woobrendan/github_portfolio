@@ -7,6 +7,7 @@ import Education from './components/Education/Education';
 import ToTop from './components/ToTop';
 import ExpCarousel from './components/Experience/ExpCarousel';
 import { useState } from 'react';
+import TopNavBar from './components/TopNavBar/TopNavBar';
 
 function App() {
   const [component, setComponent] = useState('About');
@@ -26,6 +27,7 @@ function App() {
       <h1>Brendan Woo</h1>
       <h3>Full Stack Developer</h3>
       <Sidebar />
+      <TopNavBar />
       {currentPage(component)}
       {/* <AboutMe />
       <Education />
