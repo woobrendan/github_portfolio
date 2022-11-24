@@ -16,17 +16,19 @@ function App() {
     switch(page) {
       case 'About': return <AboutMe />
       case 'Education': return <Education />
-      case 'Projects': return <ProjectList />
+      case 'Project': return <ProjectList />
       case 'Skills': return <Skills />
       case 'Experience': return <ExpCarousel />
     }
   }
-
+  
+  const getSelectedComponent = (value) => setComponent(value)
+  
   return (
     <div className="App">
       <h1>Brendan Woo</h1>
       <h3>Full Stack Developer</h3>
-      <Sidebar />
+      <Sidebar getComponent={getSelectedComponent}/>
       <TopNavBar />
       {currentPage(component)}
       {/* <AboutMe />
