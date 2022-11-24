@@ -1,5 +1,6 @@
 import {faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import '../../Styles/top_nav.scss'
 
 function TopNavBar() {
   return (
