@@ -12,26 +12,6 @@ export default function IconLinks() {
       <nav>
         <ul>
           <li>
-            <a 
-              target="_blank" 
-              rel="noreferrer"
-              href="https://www.linkedin.com/in/woobrendan/"
-              className="linkedin-icon"
-            >
-              <FontAwesomeIcon icon={faLinkedin} />
-            </a>
-          </li>
-          <li>
-            <a 
-              target="_blank" 
-              rel="noreferrer"
-              href="https://github.com/woobrendan"
-              className="github-icon"
-            >
-              <FontAwesomeIcon icon={faGithub} />
-            </a>
-          </li>
-          <li>
               <a href="#About-container" className="about-icon">
                 <PersonIcon fontSize="large"/>
               </a>
