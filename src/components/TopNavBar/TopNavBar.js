@@ -12,7 +12,7 @@ function TopNavBar() {
           href="https://www.linkedin.com/in/woobrendan/"
           className="linkedin-icon"
         >
-          <FontAwesomeIcon icon={faLinkedin} />
+          <FontAwesomeIcon icon={faLinkedin} size="xl"/>
         </a>
       </div>
       <div>
@@ -22,7 +22,7 @@ function TopNavBar() {
           href="https://github.com/woobrendan"
           className="github-icon"
         >
-          <FontAwesomeIcon icon={faGithub} />
+          <FontAwesomeIcon icon={faGithub} size="xl"/>
         </a>
       </div>
     </nav>
