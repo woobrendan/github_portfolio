@@ -1,15 +1,6 @@
 import { Person, Email, WorkHistory, StickyNote2, Construction } from '@mui/icons-material'
-import { useState } from 'react'
-
 
 export default function IconLinks({ getComponent }) {
-
-  const [selected, setSelected] = useState('');
-
-  const getValue = (event) => {
-    console.log('event', event.target.name)
-    setSelected(event.target.name)
-  }
 
   return(
     <div className="icon-list">
