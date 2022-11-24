@@ -1,9 +1,58 @@
 .top_nav {
-  position: fixed;
+  position: absolute;
   top: 3vh;
   display: flex;
   right: 3vw;
   width: 25%;
   gap: 2vw;
   z-index: 3;
+
+  a {
+    font-size: 22px;
+    color: #ffffff;
+    display: block;
+    line-height: 51px;
+    height: 51px;
+    position: relative;
+    text-decoration: none;
+
+    i {
+      transition: all 0.3s ease-out;
+    }
+
+    &:hover {
+      color: gold;
+
+      svg {
+        opacity: 0;
+      }
+
+      &:after {
+        opacity: 1;
+      }
+    }
+    &:after {
+      content: "";
+      font-size: 9px;
+      letter-spacing: 2px;
+      position: absolute;
+      bottom: 0;
+      display: block;
+      width: 100%;
+      text-align: center;
+      opacity: 0;
+      transition: all 0.3s ease-out;
+      -webkit-transition: all 0.3s ease-out;
+    }
+    &:first-child {
+      &:after {
+        content: "LINKEDIN";
+      }
+    }
+  }
+  a.github-icon {
+    &:after {
+      content: "GITHUB";
+    }
+  }
 }
