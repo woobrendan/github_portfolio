@@ -1,10 +1,5 @@
-import {faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons'
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import WorkHistoryIcon from '@mui/icons-material/WorkHistory';
-import StickyNote2Icon from '@mui/icons-material/StickyNote2';
-import PersonIcon from '@mui/icons-material/Person';
-import EmailIcon from '@mui/icons-material/Email';
-import ConstructionIcon from '@mui/icons-material/Construction';
+import { Person, Email, WorkHistory, StickyNote2, Construction } from '@mui/icons-material'
+
 
 export default function IconLinks() {
   return(
@@ -13,27 +8,27 @@ export default function IconLinks() {
         <ul>
           <li>
               <a href="#About-container" className="about-icon">
-                <PersonIcon fontSize="large"/>
+                <Person fontSize="large"/>
               </a>
           </li>
           <li>
               <a href="#project-list" className="project-icon">
-                <StickyNote2Icon fontSize="large"/>
+                <StickyNote2 fontSize="large"/>
               </a>
           </li>
           <li>
               <a href="#skills-list" className="skills-icon">
-                <ConstructionIcon fontSize="large"/>
+                <Construction fontSize="large"/>
               </a>
           </li>
           <li>
             <a href="#Experience" className="work-icon">
-              <WorkHistoryIcon fontSize="large"/>
+              <WorkHistory fontSize="large"/>
             </a>
           </li>
           <li>
             <a href="#Contact" className="contact-icon">
-              <EmailIcon fontSize="large" />
+              <Email fontSize="large" />
             </a>
           </li>
         </ul>
