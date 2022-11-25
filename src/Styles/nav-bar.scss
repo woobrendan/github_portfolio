@@ -54,6 +54,12 @@
         -webkit-transition: all 0.3s ease-out;
       }
     }
+
+    a.home-icon {
+      &:after {
+        content: "HOME";
+      }
+    }
     
     a.about-icon {
       &:after {
