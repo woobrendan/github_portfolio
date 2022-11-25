@@ -27,11 +27,6 @@ export default function IconLinks({ getComponent }) {
               <WorkHistory fontSize="large"/>
             </a>
           </li>
-          <li>
-            <a href="#Contact" className="contact-icon">
-              <Email fontSize="large" />
-            </a>
-          </li>
         </ul>
       </nav>
     </div>
