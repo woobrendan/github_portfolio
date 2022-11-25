@@ -4,7 +4,7 @@
   display: flex;
   right: 3vw;
   width: 25%;
-  gap: 3vw;
+  gap: 4vw;
   z-index: 3;
 
   a {
@@ -56,8 +56,8 @@
     }
   }
   a.contact-icon {
-    padding-top: 20%;
-    
+    padding-top: 1vh;
+
     &:after {
       content: "CONTACT";
     }
