@@ -1,6 +1,7 @@
 import { Person, WorkHistory, StickyNote2, Construction, Home } from '@mui/icons-material'
 
 export default function IconLinks({ getComponent, currentComponent }) {
+  console.log('side current', currentComponent)
 
   const sections = [
     {
@@ -35,11 +36,17 @@ export default function IconLinks({ getComponent, currentComponent }) {
     }
   ]
 
+
   const mappedSections = sections.map((section, index) => (
     <li key={index}>
-      <a className={section.className} name={section.name} onClick={section.onClick}>
-        {section.component}
-      </a>
+      {currentComponent !== section.name 
+        ? <a className={section.className} name={section.name} onClick={section.onClick}>
+            {section.component}
+          </a>
+        : <a>
+            {section.name}
+          </a>
+      }
     </li>
   ))
 
@@ -47,31 +54,6 @@ export default function IconLinks({ getComponent, currentComponent }) {
     <div className="icon-list">
       <nav>
         <ul>
-          {/* <li>
-            <a className="home-icon" name="Home" onClick={(e) => getComponent(e.target.name)}>
-              <Home fontSize="large"/>
-            </a>
-          </li>
-          <li>
-            <a className="about-icon" name="About" onClick={(e) => getComponent(e.target.name)}>
-              <Person fontSize="large"/>
-            </a>
-          </li>
-          <li>
-            <a className="project-icon" name="Project" onClick={(e) => getComponent(e.target.name)}>
-              <StickyNote2 fontSize="large"/>
-            </a>
-          </li>
-          <li>
-            <a className="skills-icon" name="Skills" onClick={(e) => getComponent(e.target.name)}>
-              <Construction fontSize="large"/>
-            </a>
-          </li>
-          <li>
-            <a className="work-icon" name="Experience" onClick={(e) => getComponent(e.target.name)}>
-              <WorkHistory fontSize="large"/>
-            </a>
-          </li> */}
           {mappedSections}
         </ul>
       </nav>
