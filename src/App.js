@@ -19,6 +19,7 @@ function App() {
       case 'Project': return <ProjectList />
       case 'Skills': return <Skills />
       case 'Experience': return <ExpCarousel />
+      default: return /* home component*/
     }
   }
   
@@ -28,7 +29,7 @@ function App() {
     <div className="App">
       <h1>Brendan Woo</h1>
       <h3>Full Stack Developer</h3>
-      <Sidebar getComponent={getSelectedComponent}/>
+      <Sidebar getComponent={getSelectedComponent} currentComponent={component} />
       <TopNavBar />
       {currentPage(component)}
       {/* <AboutMe />
