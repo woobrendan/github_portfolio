@@ -6,7 +6,6 @@ import '../../Styles/top_nav.scss'
 function TopNavBar() {
   return (
     <nav className="top_nav">
-      <div>
         <a 
           target="_blank" 
           rel="noreferrer"
@@ -15,8 +14,6 @@ function TopNavBar() {
         >
           <FontAwesomeIcon icon={faLinkedin} size="xl"/>
         </a>
-      </div>
-      <div>
         <a 
           target="_blank" 
           rel="noreferrer"
@@ -25,12 +22,10 @@ function TopNavBar() {
         >
           <FontAwesomeIcon icon={faGithub} size="xl"/>
         </a>
-      </div>
-      <div>
         <a href="#Contact" className="contact-icon">
           <Email fontSize="large" />
         </a>
-      </div>
+  
     </nav>
   )
 }
