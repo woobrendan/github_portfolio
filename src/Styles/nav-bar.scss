@@ -53,17 +53,8 @@
         transition: all 0.3s ease-out;
         -webkit-transition: all 0.3s ease-out;
       }
-      &:first-child {
-        &:after {
-          content: "LINKEDIN";
-        }
-      }
     }
-    a.github-icon {
-      &:after {
-        content: "GITHUB";
-      }
-    }
+    
     a.about-icon {
       &:after {
         content: "ABOUT";
@@ -73,12 +64,6 @@
     a.skills-icon {
       &:after {
         content: "SKILLS";
-      }
-    }
-
-    a.contact-icon {
-      &:after {
-        content: "CONTACT";
       }
     }
     a.project-icon {
