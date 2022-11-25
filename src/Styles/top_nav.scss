@@ -55,4 +55,11 @@
       content: "GITHUB";
     }
   }
+  a.contact-icon {
+    padding-top: 20%;
+    
+    &:after {
+      content: "CONTACT";
+    }
+  }
 }
