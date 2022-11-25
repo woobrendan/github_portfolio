@@ -1,4 +1,4 @@
-import { Person, Email, WorkHistory, StickyNote2, Construction } from '@mui/icons-material'
+import { Person, WorkHistory, StickyNote2, Construction, Home } from '@mui/icons-material'
 
 export default function IconLinks({ getComponent }) {
 
@@ -6,6 +6,11 @@ export default function IconLinks({ getComponent }) {
     <div className="icon-list">
       <nav>
         <ul>
+          <li>
+            <a href="#About-container" className="home-icon" name="Home" onClick={(e) => getComponent(e.target.name)}>
+              <Home fontSize="large"/>
+            </a>
+          </li>
           <li>
             <a href="#About-container" className="about-icon" name="About" onClick={(e) => getComponent(e.target.name)}>
               <Person fontSize="large"/>
