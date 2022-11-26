@@ -43,6 +43,7 @@
       &:after {
         content: "";
         font-size: 9px;
+        font-weight: bold;
         letter-spacing: 2px;
         position: absolute;
         bottom: 0;
@@ -87,6 +88,13 @@
         color: #ffd700;
       }
     }
+    a.selected {
+      color: gold;
+      font-size: 9px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
     ul {
       position: absolute;
       bottom: 20px;
