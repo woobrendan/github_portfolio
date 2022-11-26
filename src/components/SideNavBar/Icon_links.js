@@ -14,28 +14,24 @@ export default function IconLinks({ getComponent, currentComponent }) {
     {
       className: 'about-icon',
       name: 'About',
-      display: 'ABOUT',
       component: (<Person fontSize="large" />),
       onClick: ((e) => getComponent(e.target.name))
     },
     {
       className: 'project-icon',
       name: 'Project',
-      display: 'PROJECT',
       component: (<StickyNote2 fontSize="large" />),
       onClick: ((e) => getComponent(e.target.name))
     },
     {
       className: 'skills-icon',
       name: 'Skills',
-      display: 'SKILLS',
       component: (<Construction fontSize="large"/>),
       onClick: ((e) => getComponent(e.target.name))
     },
     {
       className: 'work-icon',
       name: 'Experience',
-      display: 'EXPERIENCE',
       component: (<WorkHistory fontSize="large"/>),
       onClick: ((e) => getComponent(e.target.name))
     }
@@ -49,7 +45,7 @@ export default function IconLinks({ getComponent, currentComponent }) {
             {section.component}
           </a>
         : <a className="selected">
-            {section.display}
+            {section.name.toUpperCase()}
           </a>
       }
     </li>
