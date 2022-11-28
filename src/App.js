@@ -10,7 +10,7 @@ import { useState } from 'react';
 import TopNavBar from './components/TopNavBar/TopNavBar';
 
 function App() {
-  const [component, setComponent] = useState('About');
+  const [component, setComponent] = useState('Home');
 
   const currentPage = (page) => {
     switch(page) {
@@ -32,11 +32,6 @@ function App() {
       <Sidebar getComponent={getSelectedComponent} currentComponent={component} />
       <TopNavBar />
       {currentPage(component)}
-      {/* <AboutMe />
-      <Education />
-      <ProjectList />
-      <Skills />
-      <ExpCarousel /> */}
       {/* <div id="Contact">
         Email Me
       </div> */}
