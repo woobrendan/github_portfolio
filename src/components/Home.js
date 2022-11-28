@@ -8,8 +8,8 @@ function Home() {
         <img src={self} alt="portrait" />
       </div>
       <div className='home_description'>
-        <h1>Hello I'm Brendan Woo</h1>
-        <h5>I am a Full Stack Developer based in Canada</h5>
+        <h1>Hello I am Brendan Woo</h1>
+        <h3>Full Stack Developer</h3>
       </div>
     </section>
   )
