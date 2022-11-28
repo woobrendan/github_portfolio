@@ -1,8 +1,11 @@
 .home_container {
-  
+  display: flex;
+  justify-content: space-around;
 
-  .home_img {
+  img {
     border-radius: 50%;
-    overflow: hidden;
+    object-fit: cover;
+    height: 50vh;
+    width: 50vh;
   }
 }
