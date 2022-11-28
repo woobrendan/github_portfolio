@@ -41,7 +41,12 @@ export default function IconLinks({ getComponent, currentComponent }) {
   const mappedSections = sections.map((section, index) => (
     <li key={index}>
       {currentComponent !== section.name 
-        ? <a className={section.className} name={section.name} onClick={section.onClick}>
+        ? <a 
+            className={section.className} 
+            name={section.name} 
+            onClick={section.onClick}
+            href={`#${section.name}`}
+          >
             {section.component}
           </a>
         : <a className="selected">
