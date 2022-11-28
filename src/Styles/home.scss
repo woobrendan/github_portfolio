@@ -1,11 +1,13 @@
 .home_container {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  padding: 20vh 7%;
 
   img {
     border-radius: 50%;
     object-fit: cover;
-    height: 50vh;
-    width: 50vh;
+    height: 30vw;
+    width: 30vw;
   }
 }
