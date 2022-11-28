@@ -28,8 +28,12 @@ function App() {
   
   return (
     <div className="App">
-      <h1>Brendan Woo</h1>
-      <h3>Full Stack Developer</h3>
+      {component !== 'Home' && 
+      <>
+        <h1>Brendan Woo</h1>
+        <h3>Full Stack Developer</h3>
+      </>
+      }
       <Sidebar 
         getComponent={getSelectedComponent} 
         currentComponent={component} 
