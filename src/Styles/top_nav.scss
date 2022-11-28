@@ -1,11 +1,17 @@
 .top_nav {
-  position: absolute;
   top: 3vh;
   display: flex;
   right: 3vw;
-  width: 25%;
-  gap: 4vw;
+  width: 100%;
+  // gap: 5vw;
   z-index: 3;
+  justify-content: space-around;
+  padding-bottom: 30px;
+
+  .top_nav_links {
+    display: flex;
+    gap: 5vw;
+  }
 
   a {
     font-size: 22px;
