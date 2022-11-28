@@ -1,16 +1,26 @@
 .top_nav {
-  top: 3vh;
-  display: flex;
-  right: 3vw;
-  width: 100%;
-  // gap: 5vw;
-  z-index: 3;
-  justify-content: space-around;
-  padding-bottom: 30px;
+  // top: 3vh;
+  // display: flex;
+  // right: 3vw;
+  // width: 100%;
+  // // gap: 5vw;
+  // z-index: 3;
+  // justify-content: space-around;
+  padding-bottom: 90px;
+  position: relative;
 
   .top_nav_links {
     display: flex;
     gap: 5vw;
+    position: absolute;
+    top: 2vh;
+    right: 6vw;
+  }
+
+  .top_nav_title {
+    position: absolute;
+    top: 1vh;
+    left: 6vw;
   }
 
   a {
