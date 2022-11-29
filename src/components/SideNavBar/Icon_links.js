@@ -49,7 +49,7 @@ export default function IconLinks({ getComponent, currentComponent }) {
           >
             {section.component}
           </a>
-        : <a className="selected">
+        : <a className="selected" href={`#${section.name}`}>
             {section.name.toUpperCase()}
           </a>
       }
