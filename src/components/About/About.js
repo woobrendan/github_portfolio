@@ -6,7 +6,7 @@ import AboutDescription from './AboutDescription';
 
 export default function AboutMe() {
   return (
-    <div id="About-container">
+    <div id="About">
       <div className="intro_header">
         <div className="intro_left">
           <Box
