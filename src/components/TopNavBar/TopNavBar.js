@@ -28,9 +28,9 @@ function TopNavBar({ currentComponent }) {
         >
           <FontAwesomeIcon icon={faGithub} size="xl"/>
         </a>
-        {/* <a href="#Contact" className="contact-icon">
+        <a href="mailto:woo.brendan@gmail.com" className="contact-icon">
           <Email fontSize="large" />
-        </a> */}
+        </a>
       </div>
   
     </nav>
