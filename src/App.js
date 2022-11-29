@@ -9,9 +9,16 @@ import Home from './components/Home'
 import ExpCarousel from './components/Experience/ExpCarousel';
 import { useState } from 'react';
 import TopNavBar from './components/TopNavBar/TopNavBar';
+import { animated, useTransition } from 'react-spring';
 
 function App() {
   const [component, setComponent] = useState('');
+  const transition = useTransition(component, {
+    from: { opacity: 0 },
+    enter: {  opacity: 1 },
+    leave: {  opacity: 0 },
+    delay: 200
+  })
 
   const currentPage = (page) => {
     switch(page) {
@@ -33,7 +40,12 @@ function App() {
         currentComponent={component} 
       />
       <TopNavBar currentComponent={component} />
-      {currentPage(component)}
+      {transition((style) => 
+            <animated.div style={style} className="item" >
+              {currentPage(component)}
+            </animated.div>
+          )}
+      {/* {currentPage(component)} */}
       <ToTop />
     </div>
   );
