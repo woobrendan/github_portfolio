@@ -6,15 +6,12 @@ import AboutDescription from './AboutDescription';
 
 export default function AboutMe() {
   return (
-    <div id="About">
+    <section id="About">
       <div className="intro_header">
         <div className="intro_left">
           <Box
             component="img"
-            sx={{
-              width: 300,
-              height: 300,
-            }}
+            sx={{ width: 300, height: 300 }}
             alt="SRO Portrait"
             src={pwc}
             id="About-img"
@@ -23,6 +20,6 @@ export default function AboutMe() {
         </div>
         <AboutDescription />
       </div>
-    </div>
+    </section>
   )
 }
