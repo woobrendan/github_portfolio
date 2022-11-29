@@ -28,17 +28,11 @@ function App() {
   
   return (
     <div className="App">
-      {component !== 'Home' && 
-      <>
-        <h1>Brendan Woo</h1>
-        <h3>Full Stack Developer</h3>
-      </>
-      }
       <Sidebar 
         getComponent={getSelectedComponent} 
         currentComponent={component} 
       />
-      <TopNavBar />
+      <TopNavBar currentComponent={component} />
       {currentPage(component)}
       {/* <div id="Contact">
         Email Me
