@@ -1,17 +1,12 @@
 .experience-carousel {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
-  padding-bottom: 80px;
   position: relative;
 
   .nav_arrow {
     color: gold;
-
-    .MuiSvgIcon-root {
-      width: 10vh;
-      height: 10vh;
-    }
+    width: 10vh;
+    height: 10vh;
   }
 
   .slide_active {
