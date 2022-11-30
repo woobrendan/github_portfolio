@@ -11,7 +11,7 @@ import { useState } from 'react';
 import TopNavBar from './components/TopNavBar/TopNavBar';
 
 function App() {
-  const [component, setComponent] = useState('');
+  const [component, setComponent] = useState('Home');
 
   const currentPage = (page) => {
     switch(page) {
