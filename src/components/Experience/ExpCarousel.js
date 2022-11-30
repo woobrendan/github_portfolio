@@ -34,7 +34,7 @@ function ExpCarousel() {
       <div className="exp_nav">
         <ArrowCircleLeft onClick={() => handleNextClick()} 
         className="nav_arrow"/>
-        <Button variant="conatined">
+        <Button variant="outlined" onClick={() => setSlide(!slide)}>
           {slide ? "Stop Slides" : "Start Slides"}
         </Button>
         <ArrowCircleRight onClick={() => handleNextClick('next')} className="nav_arrow"/>
