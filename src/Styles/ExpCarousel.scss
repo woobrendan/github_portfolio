@@ -2,6 +2,8 @@
   display: flex;
   justify-content: center;
   position: relative;
+  flex-direction: column;
+  align-items: center;
 
   .nav_arrow {
     color: gold;
