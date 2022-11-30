@@ -1,13 +1,11 @@
 import { Person, WorkHistory, StickyNote2, Construction, Home } from '@mui/icons-material'
 
 export default function IconLinks({ getComponent, currentComponent }) {
-  console.log('side current', currentComponent)
 
   const sections = [
     {
     className: 'home-icon',
     name: 'Home',
-    display: 'HOME',
     component: (<Home fontSize="large" />),
     onClick: ((e) => getComponent(e.target.name))
     },
@@ -37,30 +35,27 @@ export default function IconLinks({ getComponent, currentComponent }) {
     }
   ]
 
-
-  const mappedSections = sections.map((section, index) => (
-    <li key={index}>
-      {currentComponent !== section.name 
-        ? <a 
-            className={section.className} 
-            name={section.name} 
-            onClick={section.onClick}
-            href={`#${section.name}`}
-          >
-            {section.component}
-          </a>
-        : <a className="selected" href={`#${section.name}`}>
-            {section.name.toUpperCase()}
-          </a>
-      }
-    </li>
-  ))
-
   return(
     <div className="icon-list">
       <nav>
         <ul>
-          {mappedSections}
+          {sections.map((section, index) => (
+            <li key={index}>
+              {currentComponent !== section.name 
+                ? <a 
+                    className={section.className} 
+                    name={section.name} 
+                    onClick={section.onClick}
+                    href={`#${section.name}`}
+                  >
+                    {section.component}
+                  </a>
+                : <a className="selected" href={`#${section.name}`}>
+                    {section.name.toUpperCase()}
+                  </a>
+              }
+            </li>
+          ))}
         </ul>
       </nav>
     </div>
