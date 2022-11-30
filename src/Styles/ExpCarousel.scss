@@ -5,11 +5,18 @@
   flex-direction: column;
   align-items: center;
 
-  .nav_arrow {
-    color: gold;
-    width: 10vh;
-    height: 10vh;
+  .exp_nav {
+    display: flex;
+    justify-content: space-around;
+    width: 50vw;
+
+    .nav_arrow {
+      color: gold;
+      width: 10vh;
+      height: 10vh;
+    }
   }
+
 
   .slide_active {
     .MuiPaper-root {
