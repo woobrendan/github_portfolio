@@ -1,9 +1,7 @@
 import { useState } from 'react'
 import { experience } from '../../seeds/experience';
 import ExperienceCard from './ExperienceCard';
-import ArrowCircleLeftIcon from '@mui/icons-material/ArrowCircleLeft';
-import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
-import { IconButton } from '@mui/material'
+import { ArrowCircleRight, ArrowCircleLeft } from '@mui/icons-material';
 import '../../Styles/ExpCarousel.scss'
 
 function ExpCarousel() {
@@ -26,9 +24,9 @@ function ExpCarousel() {
   return (
     <section className="experience-carousel" id="Experience">
       <div className="exp_nav">
-        <ArrowCircleLeftIcon onClick={() => handleNextClick()} 
+        <ArrowCircleLeft onClick={() => handleNextClick()} 
         className="nav_arrow"/>
-        <ArrowCircleRightIcon onClick={() => handleNextClick('next')} className="nav_arrow"/>
+        <ArrowCircleRight onClick={() => handleNextClick('next')} className="nav_arrow"/>
       </div>
       {experienceCards}
     </section>
