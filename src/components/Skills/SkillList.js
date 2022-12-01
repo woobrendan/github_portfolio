@@ -1,17 +1,15 @@
-function SkillList(props) {
+function SkillList({ skills }) {
 
   return (
-    <>
-      <ul className="skill-info-list">
-        {props.skills.map((skill, index) => (
-          <li key={index}>
-            <span>
-              {skill}
-            </span>
-          </li>
-        ))}
-      </ul>
-    </>
+    <ul className="skill-info-list">
+      {skills.map((skill, index) => (
+        <li key={index}>
+          <span>
+            {skill}
+          </span>
+        </li>
+      ))}
+    </ul>
   )
 }
 
