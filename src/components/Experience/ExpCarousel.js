@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { experience } from '../../seeds/experience';
 import ExperienceCard from './ExperienceCard';
 import { ArrowCircleRight, ArrowCircleLeft } from '@mui/icons-material';
@@ -16,12 +16,21 @@ function ExpCarousel() {
       ? current === length - 1 ? setCurrent(0) : setCurrent(current + 1)
       : current === 0 ? setCurrent(length - 1) : setCurrent(current - 1) 
   }
-
+  
   const handleSlide = () => {
-    setTimeout(() => {
-      setCurrent(current === length - 1 ? 0 : current + 1)
-    }, 4000)
+    console.log('current', current)
+    if (slide) {
+      setTimeout(() => { 
+        setCurrent(current === length - 1 ? 0 : current + 1)
+      }, 4000)
+    }
+
   }
+
+  useEffect(() => {
+    handleSlide()
+  }, [slide, current])
+
 
   const experienceCards = experience.map((job, index) => (
     <div className={index === current ? 'slide_active' : 'slide'} key={job.company}>
