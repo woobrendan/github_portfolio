@@ -4,7 +4,7 @@ import pwc from '../../images/PWC.jpg'
 import ImageSlider from './ImageSlider';
 import AboutDescription from './AboutDescription';
 
-export default function AboutMe() {
+export default function About() {
   return (
     <section id="About">
       <div className="intro_header">
