@@ -1,11 +1,12 @@
 import { experience } from '../../seeds/experience';
-import ExperienceCard from './ExperienceCard';
+import ExperienceGridCard from './ExperienceCard';
+import '../../Styles/ExpGrid.scss';
 
 function ExpGrid() {
-  const mappedExp = experience.maps((exp, index) => (
-    <>
-      <ExperienceCard />
-    </>
+  const mappedExp = experience.map((exp, index) => (
+    <section className="experience_grid">
+      <ExperienceGridCard experience={exp}/>
+    </section>
   ))
   return (
     <>
