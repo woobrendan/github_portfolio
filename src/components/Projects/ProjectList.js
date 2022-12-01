@@ -5,8 +5,6 @@ import '../../Styles/project.scss'
 function ProjectList() {
 
   return (
-    <>
-      <h1>Projects</h1>
       <section id="project-list" >
         {projects.map((project, index) => (
           <ProjectSide
@@ -16,7 +14,6 @@ function ProjectList() {
           />
         ))}
       </section>
-    </>
   )
 }
 
