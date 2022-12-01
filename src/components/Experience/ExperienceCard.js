@@ -2,9 +2,8 @@ import { Card, CardMedia, CardContent } from '@mui/material'
 import ExpPositions from './ExpPositions';
 
 
-function ExperienceCard(props) {
+function ExperienceCard({ experience }) {
 
-  const experience = props.experience;
   const positions = experience.positions
 
   const mappedJobs = positions.map((position, index) => (
