@@ -1,0 +1,99 @@
+.experience-carousel {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+
+  .exp_nav {
+    display: flex;
+    justify-content: space-around;
+    width: 50vw;
+
+    .nav_arrow {
+      color: gold;
+      width: 10vh;
+      height: 10vh;
+    }
+
+    .MuiButton-root {
+      border: 1px solid gold;
+      color: gold;
+
+      &:hover {
+        color: black;
+        border-color: white;
+        background-color: gold !important;
+      }
+    }
+  }
+
+
+  .slide_active {
+    .MuiPaper-root {
+      background-color: rgba(63, 59, 59, 0.283) !important;
+      color: white !important;
+      border: 1px solid gold;
+      border-radius: 25px;
+      margin: 30px 10px 30px 10px;
+
+      &:hover {
+        background-color: rgba(101, 98, 98, 0.906) !important;
+        color: gold !important;
+
+        .position_header, h3 {
+          color: orange;
+        }
+        
+        .MuiSvgIcon-root {
+          color: orange !important;
+        }
+      }
+
+      h2 {
+        background: gold;
+        color: black;
+        font-size: 25px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+      }
+    }
+
+    .work-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      margin: 0 3%;
+
+      .position_header {
+        display: inherit;
+        justify-content: space-between;
+      }
+
+      .details_toggle {
+        display: flex;
+        justify-content: center;
+        margin-top: -3%;
+
+        .MuiSvgIcon-root {
+          color: gold;
+        }
+      }
+    }
+
+    .job-description-list {
+
+      li {
+        list-style: disc;
+        font-size: 17px;
+        padding-bottom: 10px;
+        text-align: left;
+
+        span {
+          position: relative;
+          left: 20px;
+        }
+      }
+    }
+  }
+}
