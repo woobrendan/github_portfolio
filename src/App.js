@@ -1,5 +1,5 @@
 import './Styles/App.scss';
-import AboutMe from './components/About/About';
+import About from './components/About/About';
 import Sidebar from './components/SideNavBar/Sidebar';
 import ProjectList from './components/Projects/ProjectList';
 import Skills from './components/Skills/Skills';
@@ -15,7 +15,7 @@ function App() {
 
   const currentPage = (page) => {
     switch(page) {
-      case 'About': return <AboutMe />
+      case 'About': return <About />
       case 'Education': return <Education />
       case 'Project': return <ProjectList />
       case 'Skills': return <Skills />
