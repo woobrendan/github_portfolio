@@ -1,9 +1,24 @@
-.experience-carousel {
+.experience_grid {
   display: flex;
-  justify-content: center;
-  position: relative;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  height: 90vh;
+  padding: 0 10%;
+ 
+
+  .experience_grid_card {
+    flex: 1 1 40%;
+    margin: 2%;
+
+    :nth-child(odd) {
+      flex: 0 0 50px;
+    }
+
+    img {
+      height: 300px;
+      width: 300px;
+      object-fit: cover;
+    }
+  }
 
   .exp_nav {
     display: flex;
