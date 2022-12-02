@@ -1,5 +1,5 @@
 import { experience } from '../../seeds/experience';
-import ExperienceGridCard from './ExperienceCard';
+import ExperienceGridCard from './ExperienceGridCard';
 import '../../Styles/ExpGrid.scss';
 
 function ExpGrid() {
@@ -9,9 +9,9 @@ function ExpGrid() {
     </section>
   ))
   return (
-    <>
+    <section className="experience_grid">
       {mappedExp}
-    </>
+    </section>
   )
 }
 
