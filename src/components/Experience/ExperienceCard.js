@@ -1,8 +1,9 @@
 import { Card, CardMedia, CardContent } from '@mui/material'
 import ExpPositions from './ExpPositions';
+import { Cancel } from '@mui/icons-material';
 
 
-function ExperienceCard({ experience }) {
+function ExperienceCard({ experience, close }) {
 
   const positions = experience.positions
 
@@ -16,6 +17,7 @@ function ExperienceCard({ experience }) {
 
   return (
     <Card sx={{ width: 650 }}>
+      <Cancel size="large" onClick={() => close()}/>
       <CardMedia
         component="img"
         image={experience.image}
