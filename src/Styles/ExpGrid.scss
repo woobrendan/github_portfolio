@@ -40,18 +40,24 @@
         color: orange;
       }
       
-      .MuiSvgIcon-root {
-        color: orange !important;
-      }
+      // .MuiSvgIcon-root {
+      //   color: orange !important;
+      // }
     }
 
     .toggle_close {
       position: absolute;
       top: 2%;
       right: 5%;
-      height: 6%;
-      width: 6%;
-      
+      display: flex;
+      align-items: center;
+      width: 10%;
+
+      .MuiSvgIcon-root {
+        height: 60%;
+        color: gold;
+        width: 60%;
+      }
     }
 
     h2 {
