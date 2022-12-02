@@ -1,15 +1,14 @@
 import { experience } from '../../seeds/experience';
 import ExperienceGridCard from './ExperienceGridCard';
+import ExperienceCard from './ExperienceCard';
 import '../../Styles/ExpGrid.scss';
 import { useState } from 'react'; 
 
 function ExpGrid() {
   const [selected, setSelected] = useState('');
 
-  const getCompName = (value) => {
-    console.log('value', value)
-    setSelected(value)
-  }
+  const getCompName = (value) => setSelected(value)
+
   const mappedExp = experience.map((exp, index) => (
       <ExperienceGridCard 
         experience={exp} 
@@ -17,9 +16,18 @@ function ExpGrid() {
         key={index}
       />
   ))
+
+  const selectedExpCard = () => {
+    const selectedJob = experience.find(job => job.company === selected)
+    return (
+      <ExperienceCard experience={selectedJob} />
+    )
+  }
+
   return (
     <section className="experience_grid">
       {mappedExp}
+      {selected && selectedExpCard()}
     </section>
   )
 }
