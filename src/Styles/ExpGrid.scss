@@ -7,6 +7,9 @@
 
   .experience_grid_card {
     flex: 1 1 40%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
     // margin: 2%;
 
     :nth-child(odd) {
@@ -14,8 +17,8 @@
     }
 
     img {
-      height: 230px;
-      width: 230px;
+      height: 32vh;
+      width: 32vh;
       object-fit: cover;
       border: 2px solid gold;
       border-radius: 25%;
