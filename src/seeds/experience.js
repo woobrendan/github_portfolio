@@ -2,6 +2,7 @@ import irb from '../images/IRB.jpeg'
 import tbj from '../images/TBJ.jpeg';
 import sro from '../images/sro.jpeg'
 import freedom from '../images/freedom.png';
+import irb2 from '../images/irb2.png';
 
 export const experience = [
   {
@@ -43,7 +44,7 @@ export const experience = [
   {
     company: "Immigration Refugee Board of Canada",
     location: "Toronto, ON",
-    image: irb,
+    image: irb2,
     positions: [
       {
         title: "Assistant to Coordinating Member",
