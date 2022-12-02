@@ -30,6 +30,7 @@
     border: 1px solid gold;
     border-radius: 25px;
     margin: 30px 10px 30px 10px;
+    position: relative;
 
     &:hover {
       background-color: rgba(101, 98, 98, 0.906) !important;
@@ -42,6 +43,15 @@
       .MuiSvgIcon-root {
         color: orange !important;
       }
+    }
+
+    .toggle_close {
+      position: absolute;
+      top: 2%;
+      right: 5%;
+      height: 6%;
+      width: 6%;
+      
     }
 
     h2 {
