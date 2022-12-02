@@ -9,6 +9,8 @@ function ExpGrid() {
 
   const getCompName = (value) => setSelected(value)
 
+  const closeCard = () => setSelected('')
+
   const mappedExp = experience.map((exp, index) => (
       <ExperienceGridCard 
         experience={exp} 
@@ -20,7 +22,7 @@ function ExpGrid() {
   const selectedExpCard = () => {
     const selectedJob = experience.find(job => job.company === selected)
     return (
-      <ExperienceCard experience={selectedJob} />
+      <ExperienceCard experience={selectedJob} close={closeCard}/>
     )
   }
 
