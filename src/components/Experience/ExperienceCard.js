@@ -17,7 +17,7 @@ function ExperienceCard({ experience, close }) {
 
   return (
     <Card sx={{ width: 650 }}>
-      <Cancel size="large" onClick={() => close()}/>
+      <Cancel size="large" onClick={() => close()} className="toggle_close"/>
       <CardMedia
         component="img"
         image={experience.image}
