@@ -1,7 +1,7 @@
 .experience_grid {
   display: flex;
   flex-wrap: wrap;
-  height: 90vh;
+  height: 80vh;
   padding: 0 10%;
  
 
@@ -10,7 +10,6 @@
     align-items: center;
     display: flex;
     justify-content: center;
-    // margin: 2%;
 
     :nth-child(odd) {
       flex: 0 0 50px;
@@ -25,59 +24,34 @@
     }
   }
 
-  .exp_nav {
-    display: flex;
-    justify-content: space-around;
-    width: 50vw;
+  .MuiPaper-root {
+    background-color: rgba(63, 59, 59, 0.283) !important;
+    color: white !important;
+    border: 1px solid gold;
+    border-radius: 25px;
+    margin: 30px 10px 30px 10px;
 
-    .nav_arrow {
-      color: gold;
-      width: 10vh;
-      height: 10vh;
+    &:hover {
+      background-color: rgba(101, 98, 98, 0.906) !important;
+      color: gold !important;
+
+      .position_header, h3 {
+        color: orange;
+      }
+      
+      .MuiSvgIcon-root {
+        color: orange !important;
+      }
     }
 
-    .MuiButton-root {
-      border: 1px solid gold;
-      color: gold;
-
-      &:hover {
-        color: black;
-        border-color: white;
-        background-color: gold !important;
-      }
+    h2 {
+      background: gold;
+      color: black;
+      font-size: 25px;
+      margin-top: 0px;
+      margin-bottom: 10px;
     }
   }
-
-
-  .slide_active {
-    .MuiPaper-root {
-      background-color: rgba(63, 59, 59, 0.283) !important;
-      color: white !important;
-      border: 1px solid gold;
-      border-radius: 25px;
-      margin: 30px 10px 30px 10px;
-
-      &:hover {
-        background-color: rgba(101, 98, 98, 0.906) !important;
-        color: gold !important;
-
-        .position_header, h3 {
-          color: orange;
-        }
-        
-        .MuiSvgIcon-root {
-          color: orange !important;
-        }
-      }
-
-      h2 {
-        background: gold;
-        color: black;
-        font-size: 25px;
-        margin-top: 0px;
-        margin-bottom: 10px;
-      }
-    }
 
     .work-info {
       display: flex;
@@ -115,5 +89,5 @@
         }
       }
     }
-  }
+  
 }
