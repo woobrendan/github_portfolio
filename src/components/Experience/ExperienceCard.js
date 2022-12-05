@@ -11,19 +11,20 @@ function ExperienceCard({ experience, close }) {
     <ExpPositions 
       key={index } 
       position={position}
-      hasToggle={index > 0 ? true : false} 
+      hasToggle={positions.length > 1 ? true : false} 
     />
   ))
 
   return (
     <Card >
       <Cancel size="large" onClick={() => close()} className="toggle_close"/>
-      <CardMedia
+      {experience.company !== 'SRO Motorsports America' 
+        && <CardMedia
         component="img"
         image={experience.image}
         alt={experience.company}
         sx={{ height: 195 }}
-      />
+      />}
       <CardContent>
         <h2>{experience.company}</h2>
         <h4>Location: {experience.location}</h4>
