@@ -5,9 +5,14 @@ import RemoveCircleOutlineIcon from '@mui/icons-material/RemoveCircleOutline';
 
 function ExperienceItem(props) {
   const [showDetails, setShowDetails] = useState(false);
-  const handleToggle = () => setShowDetails(!showDetails)
 
+  const handleToggle = () => {
+    setShowDetails(!showDetails)
+    props.getDetailStatus(!showDetails)
+  }
+  
   const position = props.position
+
   const mappedDuties = position.duties.map((duty, index) => (
     <li key={index}>
       {duty}
@@ -20,13 +25,11 @@ function ExperienceItem(props) {
         <h3>{position.title}</h3>
         <p>{position.year}</p>
       </div>
-    {showDetails && 
-      <>
+      {showDetails && 
         <ul className="job-description-list">
           {mappedDuties}
         </ul>
-      </>
-    }
+      }
     {props.hasToggle && 
       <div className="details_toggle">
         <h4>Details</h4>
