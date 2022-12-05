@@ -6,9 +6,9 @@ import Skills from './components/Skills/Skills';
 import Education from './components/Education/Education';
 import ToTop from './components/ToTop';
 import Home from './components/Home'
-import ExpCarousel from './components/Experience/ExpCarousel';
 import { useState } from 'react';
 import TopNavBar from './components/TopNavBar/TopNavBar';
+import ExpGrid from './components/Experience/ExpGrid';
 
 function App() {
   const [component, setComponent] = useState('Home');
@@ -19,7 +19,7 @@ function App() {
       case 'Education': return <Education />
       case 'Project': return <ProjectList />
       case 'Skills': return <Skills />
-      case 'Experience': return <ExpCarousel />
+      case 'Experience': return <ExpGrid />
       default: return <Home />
     }
   }
