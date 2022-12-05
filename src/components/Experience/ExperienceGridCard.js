@@ -1,5 +1,3 @@
-import { Card, CardMedia, CardContent } from '@mui/material';
-
 function ExperienceGridCard({ experience, getCompName }) {
   return (
 
