@@ -5,14 +5,13 @@ import RemoveCircleOutlineIcon from '@mui/icons-material/RemoveCircleOutline';
 
 function ExperienceItem(props) {
   const [showDetails, setShowDetails] = useState(false);
+  const position = props.position
 
   const handleToggle = () => {
     setShowDetails(!showDetails)
     props.getDetailStatus(!showDetails)
   }
   
-  const position = props.position
-
   const mappedDuties = position.duties.map((duty, index) => (
     <li key={index}>
       {duty}
@@ -34,10 +33,10 @@ function ExperienceItem(props) {
       <div className="details_toggle">
         <h4>Details</h4>
         <Button onClick={()=> handleToggle()}>
-          {!showDetails && 
-            <AddCircleOutlineIcon fontSize="medium" />}
-          {showDetails && 
-            <RemoveCircleOutlineIcon fontSize="medium" />}
+          {showDetails 
+            ? <RemoveCircleOutlineIcon fontSize="medium" /> 
+            : <AddCircleOutlineIcon fontSize="medium" /> 
+          }
         </Button>  
       </div>
       }
