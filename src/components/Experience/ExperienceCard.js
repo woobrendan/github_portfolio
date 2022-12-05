@@ -2,6 +2,7 @@ import { Card, CardMedia, CardContent } from '@mui/material'
 import ExpPositions from './ExpPositions';
 import { Cancel } from '@mui/icons-material';
 import { useState } from 'react'
+import ExpPositionNoToggle from './ExpPositionNoToggle';
 
 
 function ExperienceCard({ experience, close }) {
@@ -20,7 +21,14 @@ function ExperienceCard({ experience, close }) {
     />
   ))
 
+  const mapjobs = positions.map((position, index) => {
+    positions.length > 1 
+      ? <ExpPositions key={index } position={position} getDetailStatus={getDetailStatus} />
+      : <ExpPositionNoToggle key={index } position={position} />
+  })
+
   console.log('show', showingDetails)
+  console.log('positions', positions)
 
   return (
     <Card >
