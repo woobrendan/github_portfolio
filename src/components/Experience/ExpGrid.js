@@ -28,7 +28,7 @@ function ExpGrid() {
 
   return (
     <section className="experience_grid">
-      {mappedExp}
+      {!selected && mappedExp}
       {selected && selectedExpCard()}
     </section>
   )
