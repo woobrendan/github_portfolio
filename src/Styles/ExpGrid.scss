@@ -39,10 +39,6 @@
       .position_header, h3 {
         color: orange;
       }
-      
-      // .MuiSvgIcon-root {
-      //   color: orange !important;
-      // }
     }
 
     .toggle_close {
@@ -51,7 +47,6 @@
       right: 5%;
       display: flex;
       align-items: center;
-      width: 10%;
       height: 6%;
       width: 6%;
       color: gold;
@@ -66,41 +61,41 @@
     }
   }
 
-    .work-info {
+  .work-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 3%;
+
+    .position_header {
+      display: inherit;
+      justify-content: space-between;
+    }
+
+    .details_toggle {
       display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      margin: 0 3%;
+      justify-content: center;
+      margin-top: -3%;
 
-      .position_header {
-        display: inherit;
-        justify-content: space-between;
-      }
-
-      .details_toggle {
-        display: flex;
-        justify-content: center;
-        margin-top: -3%;
-
-        .MuiSvgIcon-root {
-          color: gold;
-        }
+      .MuiSvgIcon-root {
+        color: gold;
       }
     }
+  }
 
-    .job-description-list {
+  .job-description-list {
 
-      li {
-        list-style: disc;
-        font-size: 17px;
-        padding-bottom: 10px;
-        text-align: left;
+    li {
+      list-style: disc;
+      font-size: 17px;
+      padding-bottom: 10px;
+      text-align: left;
 
-        span {
-          position: relative;
-          left: 20px;
-        }
+      span {
+        position: relative;
+        left: 20px;
       }
     }
+  }
   
 }
