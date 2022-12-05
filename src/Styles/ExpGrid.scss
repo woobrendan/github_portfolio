@@ -32,6 +32,7 @@
     border-radius: 25px;
     width: 90%;
     position: relative;
+    height: 100%;
 
     &:hover {
       background-color: rgba(101, 98, 98, 0.906) !important;
@@ -88,8 +89,8 @@
 
     li {
       list-style: disc;
-      font-size: 17px;
-      padding-bottom: 10px;
+      font-size: 2.3vh;
+      padding-bottom: 1vh;
       text-align: left;
 
       span {
