@@ -7,29 +7,20 @@ import ExpPositionNoToggle from './ExpPositionNoToggle';
 
 function ExperienceCard({ experience, close }) {
 
-  const positions = experience.positions
   const [showingDetails, setShowingDetails] = useState(false)
+  const positions = experience.positions
+  const sro = 'SRO Motorsports America'
 
   const getDetailStatus = (value) => setShowingDetails(value) 
 
-  const mappedJobs = positions.map((position, index) => (
-    <ExpPositions 
-      key={index } 
-      position={position}
-      hasToggle={positions.length > 1 ? true : false} 
-      getDetailStatus={getDetailStatus}
-    />
-  ))
-
-  const mapjobs = positions.map((position, index) => {
+  const mapJobs = positions.map((position, index) => (
     positions.length > 1 
       ? <ExpPositions key={index } position={position} getDetailStatus={getDetailStatus} />
       : <ExpPositionNoToggle key={index } position={position} />
-  })
+  ))
 
-  console.log('show', showingDetails)
-  console.log('positions', positions)
-  const sro = 'SRO Motorsports America'
+  // console.log('show', showingDetails)
+  // console.log('positions', positions)
 
   return (
     <Card >
@@ -44,7 +35,7 @@ function ExperienceCard({ experience, close }) {
         <h2>{experience.company}</h2>
         <h4>Location: {experience.location}</h4>
         <div className="work-info">
-          {mappedJobs}
+          {mapJobs}
         </div>           
       </CardContent>
     </Card>
