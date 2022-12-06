@@ -29,17 +29,17 @@ function ExperienceCard({ experience, close }) {
 
   console.log('show', showingDetails)
   console.log('positions', positions)
+  const sro = 'SRO Motorsports America'
 
   return (
     <Card >
       <Cancel size="large" onClick={() => close()} className="toggle_close"/>
-      {experience.company !== 'SRO Motorsports America' 
-        && <CardMedia
+       <CardMedia
         component="img"
         image={experience.image}
         alt={experience.company}
-        sx={{ height: 195 }}
-      />}
+        sx={{ height: experience.company === sro ? 150 : 195 }}
+      />
       <CardContent>
         <h2>{experience.company}</h2>
         <h4>Location: {experience.location}</h4>
