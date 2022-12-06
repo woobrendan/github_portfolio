@@ -3,6 +3,7 @@ import ExpPositionToggle from './ExpPositionToggle';
 import { Cancel } from '@mui/icons-material';
 import { useState } from 'react'
 import ExpPositionNoToggle from './ExpPositionNoToggle';
+import ExpMultiPosition from './ExpMultiPosition';
 
 
 function ExperienceCard({ experience, close }) {
@@ -17,12 +18,6 @@ function ExperienceCard({ experience, close }) {
     if (!selectedPosition) setSelectedPosition(value)
     else setSelectedPosition('')
   }
-
-  const mapJobs = positions.map((position, index) => (
-    positions.length > 1 
-      ? <ExpPositionToggle key={index } position={position} getDetailStatus={getDetailStatus} />
-      : <ExpPositionNoToggle key={index } position={position} />
-  ))
 
   const mapPositions = positions.map((position, index) => (
     <ExpPositionToggle 
@@ -51,7 +46,7 @@ function ExperienceCard({ experience, close }) {
         <div className="work-info">
           {positions.length <= 1 
             ? <ExpPositionNoToggle position={positions[0]} />
-            : mapPositions
+            : <ExpMultiPosition positions={positions}/>
           }
         </div>           
       </CardContent>
