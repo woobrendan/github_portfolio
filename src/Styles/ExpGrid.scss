@@ -73,17 +73,22 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin: 0 3%;
+    margin: 0 2%;
 
     .position_header {
       display: inherit;
       justify-content: space-between;
+
+      h3 p {
+        margin-top: 2%;
+      }
     }
 
     .details_toggle {
       display: flex;
       justify-content: center;
       margin-top: -3%;
+      align-items: center;
 
       .MuiSvgIcon-root {
         color: gold;
@@ -92,6 +97,7 @@
   }
 
   .job-description-list {
+    margin-top: 0;
 
     li {
       list-style: disc;
