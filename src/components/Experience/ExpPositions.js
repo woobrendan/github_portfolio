@@ -18,9 +18,9 @@ function ExperienceItem(props) {
     </li>
   ))
 
-  const withToggle = (
-    <>
-      <div className="position_header">
+ return (
+   <>
+       <div className="position_header">
         <h3>{position.title}</h3>
         <p>{position.year}</p>
       </div>
@@ -40,24 +40,6 @@ function ExperienceItem(props) {
         </Button>  
       </div>
       }
-   </>
-  )
-
-  const withoutToggle = (
-    <>
-    <div className="position_header">
-      <h3>{position.title}</h3>
-      <p>{position.year}</p>
-    </div>
-    <ul className="job-description-list">
-      {mappedDuties}
-    </ul>
-   </>
-  )
-
- return (
-   <>
-      {props.hasToggle ? withToggle : withoutToggle}
    </>
  )
 }
