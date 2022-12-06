@@ -4,32 +4,37 @@ import { Button } from "@mui/material";
 
 
 function ExpMultiPosition({ positions }) {
-  const [selectedPosition, setSelectedPosition] = useState('')
+  const [selectedPosition, setSelectedPosition] = useState('');
 
-  const mappedPositions = positions.map((position, index) => (
-    <>
+  const positionHeader = (position) => {
+    return (
       <div className="position_header">
         <h3>{position.title}</h3>
         <p>{position.year}</p>
-      </div>   
+      </div>  
+    )
+  }
+
+  // Loop through all positions on array and render header and details button
+  const mappedPositions = positions.map((position, index) => (
+    <div key={index}>
+      {positionHeader(position)} 
       <div className="details_toggle">
         <h4>Details</h4>
         <Button onClick={() => setSelectedPosition(position.title)}>         
           <AddCircleOutline fontSize="medium" />        
         </Button>  
       </div>
-    </>
+    </div>
   ))
 
+  //once selectedPosition is truthy, look for matching titles and return that header with mapped out duties
   const selectedJob = () => {
     for (let position of positions) {
       if (position.title === selectedPosition) {
         return (
           <>
-            <div className="position_header">
-              <h3>{position.title}</h3>
-              <p>{position.year}</p>
-            </div>
+            {positionHeader(position)}
             {position.duties.map((duty, index) => (
               <li key={index}>{duty}</li>
             ))}   
@@ -47,8 +52,7 @@ function ExpMultiPosition({ positions }) {
 
   return (
     <>
-      {!selectedPosition && mappedPositions}
-      {selectedPosition && selectedJob()}
+      {selectedPosition ? selectedJob() : mappedPositions}
     </>
   )
 }
