@@ -20,11 +20,9 @@ function ProjectSide(props) {
       </Button>
     </div>
   )
-  
-
 
   return (
-    <section className="project_side_view">
+    <section className={isEven ? 'project_side_view_2' : 'project_side_view_1'}>
       {!isEven 
         ? <>{projectImg}{projectDetails}</>
         : <>{projectDetails}{projectImg}</>
