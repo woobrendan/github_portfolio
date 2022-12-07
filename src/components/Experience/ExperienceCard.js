@@ -7,7 +7,6 @@ import ExpMultiPosition from './ExpMultiPosition';
 function ExperienceCard({ experience, close }) {
 
   const positions = experience.positions
-  const sro = 'SRO Motorsports America'
 
   return (
     <Card >
@@ -16,7 +15,7 @@ function ExperienceCard({ experience, close }) {
         component="img"
         image={experience.image}
         alt={experience.company}
-        sx={{ height: experience.company === sro ? 150 : 195 }}
+        sx={{ height: 195 }}
       />
       <CardContent>
         <h2>{experience.company}</h2>
