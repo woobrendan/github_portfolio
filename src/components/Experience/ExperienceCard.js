@@ -2,18 +2,20 @@ import { Card, CardMedia, CardContent } from '@mui/material'
 import { Cancel } from '@mui/icons-material';
 import ExpPositionNoToggle from './ExpPositionNoToggle';
 import ExpMultiPosition from './ExpMultiPosition';
+import irb from '../../images/IRB.jpeg'
 
 
 function ExperienceCard({ experience, close }) {
 
   const positions = experience.positions
+  const getImage = experience.company !== 'Immigration Refugee Board of Canada' ? experience.image : irb
 
   return (
     <Card >
       <Cancel size="large" onClick={() => close()} className="toggle_close"/>
        <CardMedia
         component="img"
-        image={experience.image}
+        image={getImage}
         alt={experience.company}
         sx={{ height: 195 }}
       />
