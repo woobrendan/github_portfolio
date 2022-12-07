@@ -1,5 +1,4 @@
 import { Card, CardMedia, CardContent } from '@mui/material'
-import ExpPositionToggle from './ExpPositionToggle';
 import { Cancel } from '@mui/icons-material';
 import { useState } from 'react'
 import ExpPositionNoToggle from './ExpPositionNoToggle';
@@ -8,28 +7,8 @@ import ExpMultiPosition from './ExpMultiPosition';
 
 function ExperienceCard({ experience, close }) {
 
-  const [showingDetails, setShowingDetails] = useState(false)
-  const [selectedPosition, setSelectedPosition] = useState('')
   const positions = experience.positions
   const sro = 'SRO Motorsports America'
-
-  const getDetailStatus = (value) => setShowingDetails(value) 
-  const getSelected = (value) => {
-    if (!selectedPosition) setSelectedPosition(value)
-    else setSelectedPosition('')
-  }
-
-  const mapPositions = positions.map((position, index) => (
-    <ExpPositionToggle 
-      key={index} 
-      position={position} 
-      getDetailStatus={getDetailStatus}
-      index={index + 1} 
-      getSelected={getSelected}
-    />
-  ))
-
-  console.log('selected', selectedPosition)
 
   return (
     <Card >
