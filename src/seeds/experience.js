@@ -1,4 +1,3 @@
-import irb from '../images/IRB.jpeg'
 import tbj from '../images/TBJ.jpeg';
 import sro from '../images/sro.jpeg'
 import freedom from '../images/freedom.png';
