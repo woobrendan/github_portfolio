@@ -17,7 +17,7 @@ function ExpMultiPosition({ positions }) {
 
   // Loop through all positions on array and render header and details button
   const mappedPositions = positions.map((position, index) => (
-    <div key={index}>
+    <>
       {positionHeader(position)} 
       <div className="details_toggle">
         <h4>Details</h4>
@@ -25,7 +25,7 @@ function ExpMultiPosition({ positions }) {
           <AddCircleOutline fontSize="medium" />        
         </Button>  
       </div>
-    </div>
+    </>
   ))
 
   //once selectedPosition is truthy, look for matching titles and return that header with mapped out duties
@@ -35,9 +35,11 @@ function ExpMultiPosition({ positions }) {
         return (
           <>
             {positionHeader(position)}
-            {position.duties.map((duty, index) => (
-              <li key={index}>{duty}</li>
-            ))}   
+            <ul className="job-description-list">
+              {position.duties.map((duty, index) => (
+                <li key={index}>{duty}</li>
+              ))}
+            </ul>  
             <div className="details_toggle">
               <h4>Close</h4>
               <Button onClick={() => setSelectedPosition('')}>         
