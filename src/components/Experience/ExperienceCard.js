@@ -1,6 +1,5 @@
 import { Card, CardMedia, CardContent } from '@mui/material'
 import { Cancel } from '@mui/icons-material';
-import { useState } from 'react'
 import ExpPositionNoToggle from './ExpPositionNoToggle';
 import ExpMultiPosition from './ExpMultiPosition';
 
