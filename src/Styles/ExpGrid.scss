@@ -33,6 +33,7 @@
     width: 90%;
     position: relative;
     height: 100%;
+    font-size: 2.3vh;
 
     &:hover {
       background-color: rgba(101, 98, 98, 0.906) !important;
@@ -101,7 +102,6 @@
 
     li {
       list-style: disc;
-      font-size: 2.3vh;
       padding-bottom: 1vh;
       text-align: left;
 
