@@ -56,6 +56,12 @@
   .home_container {
     padding: 15vh 9%;
   }
+
+  .top_nav {
+    a:after {
+      font-size: 10px !important;
+    }
+  }
 }
 
 @media (max-width: 769px) {
@@ -66,14 +72,28 @@
       font-size: 35px;
     }
   }
+
+  .top_nav {
+    a:after {
+      font-size: 9px !important;
+    }
+  }
 }
 
 @media (max-width: 480px) {
   .home_container {
     padding: 24vh 3% 15vh 15%;
+    flex-direction: column;
+    gap: 50px;
 
     h1 {
       font-size: 30px;
+    }
+  }
+
+  .top_nav {
+    a:after {
+      font-size: 8px !important;
     }
   }
 }
