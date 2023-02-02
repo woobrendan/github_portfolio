@@ -2,7 +2,6 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 15vh 7%;
 
   h1 {
     color: gold;
@@ -20,23 +19,5 @@
     to {
       box-shadow: 0px 0px 20px 10px gold;
     }
-  }
-}
-
-@media (max-width: 1025px) {
-  .home_container {
-    padding: 15vh 9%;
-  }
-}
-
-@media (max-width: 769px) {
-  .home_container {
-    padding: 15vh 3% 15vh 15%;
-  }
-}
-
-@media (max-width: 480px) {
-  .home_container {
-    padding: 20vh 3% 15vh 15%;
   }
 }
