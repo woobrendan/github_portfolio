@@ -39,7 +39,7 @@ const App = () => {
         currentComponent={component}
       />
       <TopNavBar currentComponent={component} />
-      {currentPage(component)}
+      <div className="App__current_container">{currentPage(component)}</div>
       <ToTop />
     </div>
   );
