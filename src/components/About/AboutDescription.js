@@ -1,11 +1,9 @@
 import { Card, CardContent } from "@mui/material";
-import BoyIcon from "@mui/icons-material/Boy";
 
 const AboutDescription = () => {
   return (
     <Card id="about-description">
       <CardContent>
-        <BoyIcon fontSize="large" />
         <h4>Life of Brendan Woo</h4>
         <div className="intro_container">
           <p>Hello and welcome to my portfolio!</p>
