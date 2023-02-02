@@ -61,11 +61,19 @@
 @media (max-width: 769px) {
   .home_container {
     padding: 18vh 3% 15vh 15%;
+
+    h1 {
+      font-size: 35px;
+    }
   }
 }
 
 @media (max-width: 480px) {
   .home_container {
-    padding: 20vh 3% 15vh 15%;
+    padding: 24vh 3% 15vh 15%;
+
+    h1 {
+      font-size: 30px;
+    }
   }
 }
