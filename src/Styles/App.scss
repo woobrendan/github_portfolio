@@ -89,6 +89,12 @@
   }
 
   .top_nav {
+    h3 {
+      font-size: 3vw;
+      word-wrap: normal;
+      padding-top: 1vw;
+    }
+
     a:after {
       font-size: 9px !important;
     }
