@@ -73,3 +73,43 @@
     }
   }
 }
+
+@media (max-width: 480px) {
+  #About {
+    padding: 7% 3% 0% 14%;
+
+    .intro_header {
+      flex-direction: column;
+      gap: 2%;
+
+      #about-description {
+        .MuiCardContent-root {
+          .intro_container {
+            font-size: 12px;
+          }
+        }
+      }
+
+      .intro_left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+
+        img {
+          height: 20vw;
+          width: 20vw;
+        }
+
+        .slider .image {
+          height: 24vw;
+          width: 24vw;
+        }
+      }
+    }
+
+    h4 {
+      font-size: 20px !important;
+    }
+  }
+}
