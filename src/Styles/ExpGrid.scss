@@ -113,6 +113,28 @@
   }
 }
 
+@media (max-width: 1025px) {
+  .experience_grid {
+    .experience_grid_card {
+      img {
+        height: 35vw;
+        width: 35vw;
+      }
+    }
+  }
+}
+
+@media (max-width: 769px) {
+  .experience_grid {
+    .experience_grid_card {
+      img {
+        height: 30vw;
+        width: 30vw;
+      }
+    }
+  }
+}
+
 @media (max-width: 480px) {
   .experience_grid {
     .experience_grid_card {
