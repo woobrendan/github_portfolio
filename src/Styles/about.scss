@@ -50,7 +50,7 @@
 
       .intro_container {
         text-align: left;
-        font-size: 2.2vw;
+        font-size: 1.5vw;
         padding-bottom: 5%;
 
         a {
@@ -61,14 +61,38 @@
   }
 }
 
-@media (max-width: 1025px) {
+@media (min-width: 1025px) {
   #About {
     padding: 2vw 3% 0% 8vw;
 
+    .intro_header {
+      flex-direction: row;
+
+      .intro_left {
+        flex-direction: column;
+
+        #About-img {
+          height: 280px;
+          width: 280px;
+        }
+
+        .slider .image {
+          height: 280px;
+          width: 280px;
+        }
+      }
+    }
+
     #about-description {
+      max-width: 600px;
+      max-height: 700px;
+
       .MuiCardContent-root {
+        h4 {
+          font-size: 37px;
+        }
         .intro_container {
-          font-size: 1.5vw;
+          font-size: 18px;
         }
       }
     }
