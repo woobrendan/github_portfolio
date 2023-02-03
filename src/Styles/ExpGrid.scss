@@ -4,7 +4,6 @@
   height: 80vh;
   padding: 0 10%;
   justify-content: center;
- 
 
   .experience_grid_card {
     flex: 1 1 40%;
@@ -39,7 +38,8 @@
       background-color: rgba(101, 98, 98, 0.906) !important;
       color: gold !important;
 
-      .position_header, h3 {
+      .position_header,
+      h3 {
         color: orange;
       }
     }
@@ -111,5 +111,15 @@
       }
     }
   }
-  
+}
+
+@media (max-width: 480px) {
+  .experience_grid {
+    .experience_grid_card {
+      img {
+        height: 40vw;
+        width: 40vw;
+      }
+    }
+  }
 }
