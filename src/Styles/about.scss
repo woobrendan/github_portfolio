@@ -5,19 +5,31 @@
 
   .intro_header {
     display: flex;
-    // padding: 0px 30px 0px 30px;
+    flex-direction: column;
+    gap: 2%;
+
+    .intro_left {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+
+      #About-img {
+        height: 27vw;
+        width: 27vw;
+        border-radius: 25px;
+        border: 1px solid gold;
+      }
+
+      .slider .image {
+        height: 25vw;
+        width: 25vw;
+      }
+    }
 
     h4 {
       font-size: 35px;
       margin: 10px 0px 30px 0px;
-    }
-
-    #About-img {
-      border-radius: 25px;
-      // margin: 0px 30px;
-      border: 1px solid gold;
-      width: 30vw;
-      height: 30vw;
     }
 
     #about-description {
@@ -47,20 +59,40 @@
   }
 }
 
+@media (max-width: 1025px) {
+  #About {
+    padding: 7% 3% 0% 12%;
+
+    .intro_header {
+      #about-description {
+        .MuiCardContent-root {
+          .intro_container {
+            font-size: 12px;
+          }
+        }
+      }
+
+      .intro_left {
+        img {
+          height: 20vw;
+          width: 20vw;
+        }
+
+        .slider .image {
+          height: 24vw;
+          width: 24vw;
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 769px) {
   #About {
     padding: 7% 3% 0% 12%;
 
     .intro_header {
-      flex-direction: column;
-      gap: 2%;
-
       .intro_left {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 30px;
-
         .slider .image {
           height: 28vw;
           width: 28vw;
