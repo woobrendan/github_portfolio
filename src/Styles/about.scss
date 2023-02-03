@@ -5,9 +5,8 @@
 
   .intro_header {
     display: flex;
-    padding: 0px 30px 0px 30px;
-    margin-bottom: 200px;
-    
+    // padding: 0px 30px 0px 30px;
+
     h4 {
       font-size: 35px;
       margin: 10px 0px 30px 0px;
@@ -15,8 +14,10 @@
 
     #About-img {
       border-radius: 25px;
-      margin: 0px 30px;
+      // margin: 0px 30px;
       border: 1px solid gold;
+      width: 30vw;
+      height: 30vw;
     }
 
     #about-description {
@@ -27,19 +28,48 @@
 
       :hover {
         color: gold;
-      
-        a, h4 {
+
+        a,
+        h4 {
           color: white !important;
         }
       }
 
       .intro_container {
         text-align: left;
-    
+        font-size: 14.5px;
+
         a {
           color: gold;
         }
       }
+    }
+  }
+}
+
+@media (max-width: 769px) {
+  #About {
+    padding: 7% 3% 0% 12%;
+
+    .intro_header {
+      flex-direction: column;
+      gap: 2%;
+
+      .intro_left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+
+        .slider .image {
+          height: 28vw;
+          width: 28vw;
+        }
+      }
+    }
+
+    h4 {
+      font-size: 25px !important;
     }
   }
 }
