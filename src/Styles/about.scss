@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0% 3% 0% 12%;
+  padding: 2vw 3% 0% 8vw;
 
   .intro_header {
     display: flex;
@@ -51,6 +51,7 @@
       .intro_container {
         text-align: left;
         font-size: 2.2vw;
+        padding-bottom: 5%;
 
         a {
           color: gold;
@@ -60,33 +61,31 @@
   }
 }
 
-// @media (max-width: 1025px) {
-//   #About {
-//     padding: 7% 3% 0% 12%;
+@media (max-width: 1025px) {
+  #About {
+    padding: 2vw 3% 0% 8vw;
 
-//     .intro_header {
-//       #about-description {
-//         .MuiCardContent-root {
-//           .intro_container {
-//             font-size: 12px;
-//           }
-//         }
-//       }
+    #about-description {
+      .MuiCardContent-root {
+        .intro_container {
+          font-size: 1.5vw;
+        }
+      }
+    }
+  }
+}
 
-//       .intro_left {
-//         img {
-//           height: 20vw;
-//           width: 20vw;
-//         }
-
-//         .slider .image {
-//           height: 24vw;
-//           width: 24vw;
-//         }
-//       }
-//     }
-//   }
-// }
+@media (max-width: 928px) {
+  #About {
+    #about-description {
+      .MuiCardContent-root {
+        .intro_container {
+          font-size: 1.9vw;
+        }
+      }
+    }
+  }
+}
 
 //////**  MEDIA AT BELOW 769 **//////
 @media (max-width: 769px) {
