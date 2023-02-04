@@ -1,32 +1,31 @@
 import { useState } from "react";
-import {AddCircleOutline, RemoveCircleOutline } from '@mui/icons-material';
+import { AddCircleOutline, RemoveCircleOutline } from "@mui/icons-material";
 import { Button } from "@mui/material";
 
-
 function ExpMultiPosition({ positions }) {
-  const [selectedPosition, setSelectedPosition] = useState('');
+  const [selectedPosition, setSelectedPosition] = useState("");
 
   const positionHeader = (position) => {
     return (
       <div className="position_header">
         <h3>{position.title}</h3>
         <p>{position.year}</p>
-      </div>  
-    )
-  }
+      </div>
+    );
+  };
 
   // Loop through all positions on array and render header and details button
   const mappedPositions = positions.map((position, index) => (
-    <>
-      {positionHeader(position)} 
+    <section className="position__highlights">
+      {positionHeader(position)}
       <div className="details_toggle">
         <h4>Details</h4>
-        <Button onClick={() => setSelectedPosition(position.title)}>         
-          <AddCircleOutline fontSize="medium" />        
-        </Button>  
+        <Button onClick={() => setSelectedPosition(position.title)}>
+          <AddCircleOutline fontSize="medium" />
+        </Button>
       </div>
-    </>
-  ))
+    </section>
+  ));
 
   //once selectedPosition is truthy, look for matching titles and return that header with mapped out duties
   const selectedJob = () => {
@@ -39,24 +38,20 @@ function ExpMultiPosition({ positions }) {
               {position.duties.map((duty, index) => (
                 <li key={index}>{duty}</li>
               ))}
-            </ul>  
+            </ul>
             <div className="details_toggle">
               <h4>Close</h4>
-              <Button onClick={() => setSelectedPosition('')}>         
-                <RemoveCircleOutline fontSize="medium" />        
-              </Button>  
+              <Button onClick={() => setSelectedPosition("")}>
+                <RemoveCircleOutline fontSize="medium" />
+              </Button>
             </div>
           </>
-        )
+        );
       }
     }
-  }
+  };
 
-  return (
-    <>
-      {selectedPosition ? selectedJob() : mappedPositions}
-    </>
-  )
+  return <>{selectedPosition ? selectedJob() : mappedPositions}</>;
 }
 
-export default ExpMultiPosition
+export default ExpMultiPosition;
