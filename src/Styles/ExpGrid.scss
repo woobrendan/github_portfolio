@@ -77,7 +77,8 @@
     margin: 0 2%;
 
     .position_header {
-      display: inherit;
+      display: flex;
+      align-items: center;
       justify-content: space-between;
 
       h3 p {
@@ -140,9 +141,12 @@
       }
 
       .position_header {
-        h3,
+        h3 {
+          font-size: 3.1vw;
+        }
+
         p {
-          font-size: 17px;
+          font-size: 2.8vw;
         }
       }
     }
