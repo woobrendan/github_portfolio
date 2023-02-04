@@ -126,6 +126,26 @@
 
 @media (max-width: 769px) {
   .experience_grid {
+    .MuiPaper-root {
+      width: 73vw;
+
+      h4 {
+        font-size: 4vw;
+      }
+
+      .details_toggle {
+        h4 {
+          font-size: 3vw;
+        }
+      }
+
+      .position_header {
+        h3,
+        p {
+          font-size: 17px;
+        }
+      }
+    }
     .experience_grid_card {
       img {
         height: 30vw;
