@@ -76,6 +76,10 @@
     justify-content: space-around;
     margin: 0 2%;
 
+    li {
+      font-size: 3vw;
+    }
+
     .position_header {
       display: flex;
       align-items: center;
@@ -129,6 +133,10 @@
   .experience_grid {
     .MuiPaper-root {
       width: 73vw;
+
+      .work-info {
+        gap: 10vw;
+      }
 
       h4 {
         font-size: 4vw;
