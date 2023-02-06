@@ -14,9 +14,7 @@ function ExperienceCard({ experience, close }) {
       : irb;
 
   const getToggleStatus = (value) => {
-    if (value) {
-      setIsToggled(true);
-    }
+    value ? setIsToggled(true) : setIsToggled(false);
   };
 
   return (
@@ -35,7 +33,10 @@ function ExperienceCard({ experience, close }) {
           {positions.length <= 1 ? (
             <ExpPositionNoToggle position={positions[0]} />
           ) : (
-            <ExpMultiPosition positions={positions} />
+            <ExpMultiPosition
+              positions={positions}
+              getToggleStatus={getToggleStatus}
+            />
           )}
         </div>
       </CardContent>
