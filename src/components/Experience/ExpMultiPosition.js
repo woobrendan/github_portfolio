@@ -26,7 +26,7 @@ function ExpMultiPosition({ positions, getToggleStatus }) {
 
   // Loop through all positions on array and render header and details button
   const mappedPositions = positions.map((position, index) => (
-    <section className="position__highlights">
+    <section className="position__highlights" key={index}>
       {positionHeader(position)}
       <div className="details_toggle">
         <h4>Details</h4>
@@ -50,7 +50,7 @@ function ExpMultiPosition({ positions, getToggleStatus }) {
               ))}
             </ul>
             <div className="details_toggle">
-              <h4>Close</h4>
+              <h3>Close</h3>
               <Button onClick={() => handleToggle("")}>
                 <RemoveCircleOutline fontSize="medium" />
               </Button>
