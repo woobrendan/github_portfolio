@@ -17,6 +17,8 @@ function ExperienceCard({ experience, close }) {
     value ? setIsToggled(true) : setIsToggled(false);
   };
 
+  const workInfoClass = isToggled ? "work-info active" : "work-info";
+
   return (
     <Card>
       <Cancel size="large" onClick={() => close()} className="toggle_close" />
@@ -29,7 +31,7 @@ function ExperienceCard({ experience, close }) {
       <CardContent>
         <h2>{experience.company}</h2>
         <h4>Location: {experience.location}</h4>
-        <div className="work-info">
+        <div className={workInfoClass}>
           {positions.length <= 1 ? (
             <ExpPositionNoToggle position={positions[0]} />
           ) : (
