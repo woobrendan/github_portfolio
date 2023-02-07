@@ -66,11 +66,23 @@
     margin: 0 6vw 0 14vw;
     gap: 1%;
 
+    :nth-child(odd) {
+      .project_info {
+        padding-right: 5%;
+      }
+    }
+
     :nth-child(even) {
       flex-direction: row-reverse;
 
       .project_info {
         padding-left: 5%;
+      }
+    }
+
+    .project_side_view {
+      .MuiButton-root {
+        flex-direction: row;
       }
     }
   }
