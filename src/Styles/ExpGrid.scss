@@ -197,12 +197,22 @@
 @media (max-width: 480px) {
   .experience_grid {
     .MuiPaper-root {
+      h4 {
+        font-size: 80%;
+      }
+
       h2 {
         font-size: 100%;
       }
 
       .MuiCardMedia-root {
         height: 20%;
+      }
+
+      .work-info {
+        h3 {
+          font-size: 90%;
+        }
       }
     }
     .experience_grid_card {
