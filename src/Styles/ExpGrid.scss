@@ -45,6 +45,10 @@
       }
     }
 
+    .MuiCardMedia-root {
+      height: 25%;
+    }
+
     .toggle_close {
       position: absolute;
       top: 2%;
@@ -147,6 +151,10 @@
       width: 73vw;
       margin-left: 9vw;
 
+      // .MuiCardMedia-root {
+      //   height: 25%;
+      // }
+
       .work-info {
         gap: 3vw;
 
@@ -188,6 +196,15 @@
 
 @media (max-width: 480px) {
   .experience_grid {
+    .MuiPaper-root {
+      h2 {
+        font-size: 100%;
+      }
+
+      .MuiCardMedia-root {
+        height: 20%;
+      }
+    }
     .experience_grid_card {
       img {
         height: 40vw;
