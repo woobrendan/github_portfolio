@@ -22,12 +22,7 @@ function ExperienceCard({ experience, close }) {
   return (
     <Card>
       <Cancel size="large" onClick={() => close()} className="toggle_close" />
-      <CardMedia
-        component="img"
-        image={getImage}
-        alt={experience.company}
-        sx={{ height: 195 }}
-      />
+      <CardMedia component="img" image={getImage} alt={experience.company} />
       <CardContent>
         <h2>{experience.company}</h2>
         <h4>Location: {experience.location}</h4>
