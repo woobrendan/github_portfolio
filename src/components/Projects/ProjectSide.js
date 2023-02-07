@@ -1,21 +1,21 @@
 import { Button } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
-function ProjectSide(props) {
-  const project = props.project;
-  const isEven = props.index % 2 === 0;
+const ProjectSide = ({ project }) => {
+  const { name, description, frameworks, link, gif } = project;
 
   const projectImg = (
     <div className="project_img">
-      <img src={project.gif} alt={project.name} />
+      <img src={gif} alt={name} />
     </div>
   );
+
   const projectDetails = (
     <div className="project_info">
-      <h5>{project.name}</h5>
-      <p>{project.description}</p>
-      <p>Frameworks: {project.frameworks}</p>
-      <Button variant="outlined" href={project.link} startIcon={<GitHubIcon />}>
+      <h5>{name}</h5>
+      <p>{description}</p>
+      <p>Frameworks: {frameworks}</p>
+      <Button variant="outlined" href={link} startIcon={<GitHubIcon />}>
         Code
       </Button>
     </div>
@@ -27,6 +27,6 @@ function ProjectSide(props) {
       {projectDetails}
     </section>
   );
-}
+};
 
 export default ProjectSide;
