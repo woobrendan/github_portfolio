@@ -109,6 +109,7 @@
 
   .job-description-list {
     margin-top: 0;
+    padding-left: 5%;
 
     li {
       list-style: disc;
@@ -210,6 +211,9 @@
       }
 
       .work-info {
+        li {
+          font-size: 65%;
+        }
         h3 {
           font-size: 90%;
         }
