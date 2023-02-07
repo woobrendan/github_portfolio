@@ -65,9 +65,25 @@
   #project-list {
     margin: 0 1vw 0 20vw;
 
-    .project_info {
-      h5 {
-        font-size: 50%;
+    .project_side_view_1,
+    .project_side_view_2 {
+      flex-direction: column;
+
+      .project_img {
+        width: 100%;
+
+        img {
+          max-height: 100%;
+          max-width: 100%;
+        }
+      }
+
+      .project_info {
+        width: 100%;
+
+        h5 {
+          font-size: 50%;
+        }
       }
     }
   }
