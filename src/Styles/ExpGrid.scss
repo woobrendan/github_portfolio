@@ -35,15 +35,15 @@
     font-size: 2.3vh;
     align-self: center;
 
-    &:hover {
-      background-color: rgba(101, 98, 98, 0.906) !important;
-      color: gold !important;
+    // &:hover {
+    //   background-color: rgba(101, 98, 98, 0.906) !important;
+    //   color: gold !important;
 
-      .position_header,
-      h3 {
-        color: orange;
-      }
-    }
+    //   .position_header,
+    //   h3 {
+    //     color: orange;
+    //   }
+    // }
 
     .MuiCardMedia-root {
       height: 25%;
