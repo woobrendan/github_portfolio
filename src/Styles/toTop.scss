@@ -2,8 +2,8 @@
   position: fixed;
   height: 50px;
   width: 50px;
-  right: 50px;
-  bottom: 50px;
+  right: 10vw;
+  bottom: 10vw;
 
   .MuiSvgIcon-root {
     width: 7vw;
@@ -12,8 +12,29 @@
   }
 }
 
+@media (max-width: 1026px) {
+  #to_top {
+    .MuiSvgIcon-root {
+      height: 16vw;
+      width: 16vw;
+    }
+  }
+}
+
+@media (max-width: 769px) {
+  #to_top {
+    .MuiSvgIcon-root {
+      height: 12vw;
+      width: 12vw;
+    }
+  }
+}
+
 @media (max-width: 480px) {
   #to_top {
+    right: 5vw;
+    bottom: 5vw;
+
     .MuiSvgIcon-root {
       height: 15vw;
       width: 15vw;
