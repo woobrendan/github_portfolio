@@ -24,8 +24,12 @@ function ExpGrid() {
     );
   };
 
+  const expGridClass = selected
+    ? "experience_grid selected"
+    : "experience_grid";
+
   return (
-    <section className="experience_grid">
+    <section className={expGridClass}>
       {selected ? selectedExpCard() : mappedExp}
     </section>
   );
