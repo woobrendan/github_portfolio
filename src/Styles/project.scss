@@ -92,7 +92,7 @@
   #project-list {
     margin: 0 1vw 0 20vw;
 
-    .project_side_view_1 {
+    .project_side_view {
       flex-direction: column;
 
       .project_img {
@@ -106,10 +106,7 @@
 
       .project_info {
         width: 100%;
-
-        p {
-          padding: 0 5%;
-        }
+        padding: 0 5%;
 
         h5 {
           font-size: 110%;
