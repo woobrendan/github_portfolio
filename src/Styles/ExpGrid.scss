@@ -203,6 +203,10 @@
   .experience_grid {
     padding: 0 0 0 17%;
 
+    &.selected {
+      padding-left: 9%;
+    }
+
     .MuiPaper-root {
       h4 {
         font-size: 80%;
