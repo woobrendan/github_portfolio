@@ -61,6 +61,26 @@
   }
 }
 
+@media (min-width: 1026px) {
+  #project-list {
+    margin: 0 6vw 0 10vw;
+
+    :nth-child(odd) {
+      .project_info {
+        padding-right: 5%;
+      }
+    }
+
+    :nth-child(even) {
+      flex-direction: row-reverse;
+
+      .project_info {
+        padding-left: 5%;
+      }
+    }
+  }
+}
+
 @media (max-width: 769px) {
   #project-list {
     margin: 0 6vw 0 14vw;
