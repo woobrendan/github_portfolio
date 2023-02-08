@@ -211,8 +211,10 @@
       }
 
       .work-info {
-        li {
-          font-size: 65%;
+        &.active {
+          li {
+            font-size: 65%;
+          }
         }
         h3 {
           font-size: 90%;
