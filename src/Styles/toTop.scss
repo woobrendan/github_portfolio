@@ -1,7 +1,5 @@
 #to_top {
   position: fixed;
-  height: 50px;
-  width: 50px;
   right: 10vw;
   bottom: 10vw;
 
@@ -14,6 +12,9 @@
 
 @media (min-width: 1026px) {
   #to_top {
+    right: 25px;
+    bottom: 25px;
+
     .MuiSvgIcon-root {
       height: 110px;
       width: 110px;
@@ -23,9 +24,12 @@
 
 @media (max-width: 1026px) {
   #to_top {
+    right: 2vw;
+    bottom: 2vw;
+
     .MuiSvgIcon-root {
-      height: 16vw;
-      width: 16vw;
+      height: 12vw;
+      width: 12vw;
     }
   }
 }
