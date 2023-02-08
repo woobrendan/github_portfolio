@@ -19,7 +19,7 @@
     align-items: center;
     min-height: 450px;
     width: 100%;
-    padding-bottom: 5%;
+    // padding-bottom: 5%;
 
     .project_img {
       width: 56vw;
@@ -90,10 +90,13 @@
   }
 }
 
-@media (max-width: 769px) {
+@media (max-width: 1025px) {
   #project-list {
-    margin: 0 6vw 0 14vw;
-    gap: 1%;
+    margin: 0 6vw 0 10vw;
+
+    .project_side_view {
+      max-width: 1025px;
+    }
 
     :nth-child(odd) {
       .project_info {
@@ -108,12 +111,18 @@
         padding-left: 5%;
       }
     }
-
     .project_side_view {
       .MuiButton-root {
         flex-direction: row;
       }
     }
+  }
+}
+
+@media (max-width: 769px) {
+  #project-list {
+    margin: 0 6vw 0 14vw;
+    gap: 1%;
   }
 }
 
