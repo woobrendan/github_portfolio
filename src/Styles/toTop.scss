@@ -12,6 +12,15 @@
   }
 }
 
+@media (min-width: 1026px) {
+  #to_top {
+    .MuiSvgIcon-root {
+      height: 110px;
+      width: 110px;
+    }
+  }
+}
+
 @media (max-width: 1026px) {
   #to_top {
     .MuiSvgIcon-root {
