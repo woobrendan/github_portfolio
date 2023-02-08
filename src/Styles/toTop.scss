@@ -11,3 +11,12 @@
     color: gold;
   }
 }
+
+@media (max-width: 480px) {
+  #to_top {
+    .MuiSvgIcon-root {
+      height: 15vw;
+      width: 15vw;
+    }
+  }
+}
