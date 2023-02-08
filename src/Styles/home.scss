@@ -1,7 +1,11 @@
 .home_container {
   display: flex;
-  width: 80%;
+  width: 90%;
   align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-self: center;
+  height: 60vh;
 
   h1 {
     color: gold;
@@ -26,14 +30,15 @@
   .home_container {
     padding: 15vh 7%;
     gap: 25px;
-    justify-content: space-evenly;
+    flex-direction: row;
   }
 }
 
 @media (max-width: 1025px) {
   .home_container {
-    padding: 15vh 9%;
-    gap: 25px;
+    flex-direction: row;
+    // padding: 15vh 9%;
+    // gap: 25px;
   }
 
   .top_nav {
@@ -45,13 +50,14 @@
 
 @media (max-width: 769px) {
   .home_container {
-    padding: 18vh 3% 15vh 15%;
+    // padding: 0 3% 0 15%;
+    // padding: 18vh 3% 15vh 15%;
     flex-direction: column;
-    gap: 50px;
+    // gap: 50px;
 
     img {
-      height: 50vw;
-      width: 50vw;
+      height: 40vw;
+      width: 40vw;
     }
 
     h1 {
@@ -74,9 +80,9 @@
 
 @media (max-width: 480px) {
   .home_container {
-    padding: 20vh 3% 15vh 15%;
-    flex-direction: column;
-    gap: 50px;
+    padding: 0 3% 0 15%;
+    // flex-direction: column;
+    // gap: 50px;
 
     img {
       height: 50vw;
