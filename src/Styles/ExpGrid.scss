@@ -93,6 +93,10 @@
       h3 p {
         margin-top: 2%;
       }
+
+      h3 {
+        color: gold;
+      }
     }
 
     .details_toggle {
@@ -197,6 +201,8 @@
 
 @media (max-width: 480px) {
   .experience_grid {
+    padding: 0 0 0 17%;
+
     .MuiPaper-root {
       h4 {
         font-size: 80%;
@@ -223,8 +229,8 @@
     }
     .experience_grid_card {
       img {
-        height: 40vw;
-        width: 40vw;
+        height: 35vw;
+        width: 35vw;
       }
     }
   }
