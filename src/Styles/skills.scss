@@ -13,11 +13,16 @@
     border-radius: 25px;
     margin: 20px 10px 20px 10px;
     width: 420px;
-    min-height: 275;
 
     &:hover {
       background-color: rgba(101, 98, 98, 0.906);
       color: gold;
+    }
+
+    .skill_card {
+      h2 {
+        margin: 0 0;
+      }
     }
 
     .skill-info-list {
@@ -47,4 +52,17 @@
 }
 
 @media (max-width: 1025px) {
+  #skills-list {
+    padding-top: 7%;
+  }
+}
+
+@media (max-width: 769px) {
+  #skills-list {
+    padding-top: 7%;
+
+    .MuiPaper-root {
+      width: 65%;
+    }
+  }
 }
