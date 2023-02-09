@@ -3,7 +3,8 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 0 5%;
+  align-self: center;
+  flex-direction: column;
 
   .MuiPaper-root {
     background-color: rgba(63, 59, 59, 0.283);
@@ -11,6 +12,8 @@
     border: 1px solid gold;
     border-radius: 25px;
     margin: 20px 10px 20px 10px;
+    width: 420px;
+    min-height: 275;
 
     &:hover {
       background-color: rgba(101, 98, 98, 0.906);
@@ -23,7 +26,7 @@
       width: 100%;
       margin-left: 15%;
       padding-left: 0px;
-      
+
       li {
         font-size: 17px;
         text-align: left;
@@ -41,4 +44,7 @@
       }
     }
   }
+}
+
+@media (max-width: 1025px) {
 }
