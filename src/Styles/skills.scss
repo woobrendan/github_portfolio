@@ -59,8 +59,14 @@
       width: 45%;
       min-height: 300px;
 
-      :nth-last-child(-n) {
+      &:last-child {
         width: 80%;
+
+        .skill-info-list {
+          li {
+            width: 25%;
+          }
+        }
       }
     }
   }
