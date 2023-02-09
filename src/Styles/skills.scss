@@ -12,6 +12,7 @@
     border: 1px solid gold;
     border-radius: 25px;
     margin-bottom: 2%;
+    width: 75%;
 
     &:hover {
       background-color: rgba(101, 98, 98, 0.906);
@@ -39,11 +40,11 @@
 
         span {
           position: relative;
-          left: 30px;
+          left: 7%;
         }
 
         &::marker {
-          font-size: 50px;
+          font-size: 6vw;
         }
       }
     }
@@ -53,6 +54,10 @@
 @media (max-width: 1025px) {
   #skills-list {
     padding-top: 7%;
+
+    .MuiPaper-root {
+      margin-bottom: 5%;
+    }
   }
 }
 
