@@ -68,11 +68,11 @@
 
 @media (max-width: 480px) {
   #skills-list {
-    // padding-top: 5%;
     padding: 5% 0 0 5%;
 
     .MuiPaper-root {
       width: 75%;
+      margin-bottom: 9%;
 
       .skill_card {
         h2 {
@@ -81,6 +81,10 @@
 
         li {
           font-size: 75%;
+
+          span {
+            left: 5%;
+          }
 
           &::marker {
             font-size: 8vw;
