@@ -59,10 +59,23 @@
       width: 45%;
       min-height: 300px;
 
+      .skill-info-list {
+        li {
+          &::marker {
+            font-size: 60px;
+          }
+        }
+      }
+
+      &:nth-child(n) {
+        margin-right: 20px;
+      }
+
       &:last-child {
         width: 80%;
 
         .skill-info-list {
+          margin-left: 10%;
           li {
             width: 25%;
           }
