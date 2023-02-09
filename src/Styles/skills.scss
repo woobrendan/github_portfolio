@@ -58,10 +58,35 @@
 
 @media (max-width: 769px) {
   #skills-list {
-    padding-top: 0%;
+    padding-top: 5%;
 
     .MuiPaper-root {
       width: 65%;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  #skills-list {
+    // padding-top: 5%;
+    padding: 5% 0 0 5%;
+
+    .MuiPaper-root {
+      width: 75%;
+
+      .skill_card {
+        h2 {
+          font-size: 100%;
+        }
+
+        li {
+          font-size: 75%;
+
+          &::marker {
+            font-size: 8vw;
+          }
+        }
+      }
     }
   }
 }
