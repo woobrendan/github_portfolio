@@ -100,8 +100,10 @@
   }
 }
 
-@media (max-width: 928px) {
+@media (max-width: 1025px) {
   #About {
+    padding-top: 9vw;
+
     #about-description {
       .MuiCardContent-root {
         .intro_container {
