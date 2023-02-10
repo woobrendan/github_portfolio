@@ -53,7 +53,7 @@
     h2 {
       background: gold;
       color: black;
-      font-size: 25px;
+      font-size: 4vw;
       margin-top: 0px;
       margin-bottom: 10px;
     }
@@ -129,10 +129,28 @@
 
 @media (min-width: 1026px) {
   .experience_grid {
-    .work-info {
-      .job-description-list {
-        li {
-          font-size: 20px;
+    .MuiPaper-root {
+      width: 850px;
+
+      h2 {
+        font-size: 35px;
+      }
+
+      h4 {
+        font-size: 25px;
+      }
+
+      .work-info {
+        .position_header {
+          h3 {
+            font-size: 25px;
+          }
+        }
+
+        .job-description-list {
+          li {
+            font-size: 20px;
+          }
         }
       }
     }
