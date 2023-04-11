@@ -1,5 +1,5 @@
-import self from '../images/me.jpeg';
-import '../Styles/home.scss'
+import self from "../images/SRO_profile.jpg";
+import "../Styles/home.scss";
 
 function Home() {
   return (
@@ -7,12 +7,12 @@ function Home() {
       <div className="home_img">
         <img src={self} alt="portrait" />
       </div>
-      <div className='home_description'>
+      <div className="home_description">
         <h1>Hello, I am Brendan Woo</h1>
         <h3>Full Stack Developer</h3>
       </div>
     </section>
-  )
+  );
 }
 
-export default Home
+export default Home;
