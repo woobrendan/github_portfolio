@@ -8,6 +8,7 @@ export const projects = [
   {
     name: "Fuel Splitter",
     gif: fuel,
+    link: "https://github.com/woobrendan/Fuel_Splitter",
     description:
       "Fuel Splitter is a project built from a need to fairly distribute the costs of gas for a communal car. The app allows for tracking trips taken, and in the end, allocating a percentage of the total miles taken and assigning the relative portion of the bill to the appropriate person",
     frameworks: "TypeScript, React.js, MongoDB, Cypress",
