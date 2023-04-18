@@ -1,11 +1,12 @@
 {
   "files": {
     "main.css": "/github_portfolio/static/css/main.e17e231b.css",
-    "main.js": "/github_portfolio/static/js/main.4dc52464.js",
+    "main.js": "/github_portfolio/static/js/main.a54eee08.js",
     "static/js/787.2f41dc65.chunk.js": "/github_portfolio/static/js/787.2f41dc65.chunk.js",
     "static/media/new-workout.gif": "/github_portfolio/static/media/new-workout.7e0926e88215a5560a98.gif",
     "static/media/podium.gif": "/github_portfolio/static/media/podium.2e2ef11242bb1c791189.gif",
     "static/media/Jungle_Order.gif": "/github_portfolio/static/media/Jungle_Order.b5185523aaed8b914d20.gif",
+    "static/media/fuel_split.gif": "/github_portfolio/static/media/fuel_split.caa667372f41076fe9ab.gif",
     "static/media/gradient-black.jpg": "/github_portfolio/static/media/gradient-black.be68e63b57b3f25df6d3.jpg",
     "static/media/TBJ.jpeg": "/github_portfolio/static/media/TBJ.8da3b9ba191b0d064fa2.jpeg",
     "static/media/SRO_profile.jpg": "/github_portfolio/static/media/SRO_profile.1b7fa259f071e910e4d5.jpg",
@@ -17,11 +18,11 @@
     "index.html": "/github_portfolio/index.html",
     "static/media/circle-check-solid.svg": "/github_portfolio/static/media/circle-check-solid.f16c3ae53cd894a1e5a1.svg",
     "main.e17e231b.css.map": "/github_portfolio/static/css/main.e17e231b.css.map",
-    "main.4dc52464.js.map": "/github_portfolio/static/js/main.4dc52464.js.map",
+    "main.a54eee08.js.map": "/github_portfolio/static/js/main.a54eee08.js.map",
     "787.2f41dc65.chunk.js.map": "/github_portfolio/static/js/787.2f41dc65.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e17e231b.css",
-    "static/js/main.4dc52464.js"
+    "static/js/main.a54eee08.js"
   ]
 }
